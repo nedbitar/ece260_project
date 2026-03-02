@@ -15,6 +15,7 @@ input  clk;
 input  [16:0] inst; 
 input  reset;
 
+wire  fifo_valid;
 wire  [pr*bw-1:0] mac_in;
 wire  [pr*bw-1:0] kmem_out;
 wire  [pr*bw-1:0] qmem_out;
