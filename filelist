@@ -1,4 +1,4 @@
-./verilog/fullchip_tb_8x8.v
+./verilog/fullchip_tb_sfp.v
 ./verilog/fullchip.v
 ./verilog/core.v
 ./verilog/sync.v
