@@ -1,6 +1,6 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module core (clk, sum_out, mem_in, out, inst, reset);
+module core (clk, acc, div, sfp_ext_rd, sum_in, sum_out, mem_in, out, inst, reset);
 
 parameter col = 8;
 parameter bw = 8;
@@ -12,8 +12,10 @@ output [bw_psum*col-1:0] out;
 wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
 input  clk;
-input  [16:0] inst; 
+input  [16:0] inst;
 input  reset;
+input  acc, div, sfp_ext_rd;
+input  [bw_psum+3:0] sum_in;
 
 wire  fifo_valid;
 wire  [pr*bw-1:0] mac_in;
@@ -49,7 +51,7 @@ assign pmem_wr = inst[0];
 assign mac_in  = inst[6] ? kmem_out : qmem_out;
 assign pmem_in = fifo_out;
 
-assign out = fifo_out;
+assign out = sfp_out;
 
 mac_array #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_array_instance (
         .in(mac_in), 
@@ -98,6 +100,19 @@ sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
         .A(pmem_add)
 );
 
+
+
+sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_inst (
+        .clk(clk),
+        .reset(reset),
+        .acc(acc),
+        .div(div),
+        .fifo_ext_rd(sfp_ext_rd),
+        .sum_in(sum_in),
+        .sum_out(sum_out),
+        .sfp_in(pmem_out),
+        .sfp_out(sfp_out)
+);
 
 
   //////////// For printing purpose ////////////
