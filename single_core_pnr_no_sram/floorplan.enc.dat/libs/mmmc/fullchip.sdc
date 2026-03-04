@@ -1,0 +1,1 @@
+/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/single_core_pnr_no_sram/constraints/fullchip.sdc
