@@ -1,0 +1,109 @@
+VCD info: dumpfile fullchip_tb_sfp.vcd opened for output.
+##### Q data txt reading #####
+##### K data txt reading #####
+##### Estimated multiplication result #####
+prd @cycle 0: 00006fffa3000640000cfffa0fffe0fffea00003
+prd @cycle 1: 000230000100023fffe0ffffc00002ffff00004b
+prd @cycle 2: fffc6fffa50005400030fffde0000a0002cffff0
+prd @cycle 3: 00005fffd000050fffe7fffabfffaffffeafffbd
+prd @cycle 4: 00028ffff80004b00038fffd6fffdffffd20000b
+prd @cycle 5: 0004200040ffffd0002e000250005f00024ffff6
+prd @cycle 6: 0006100075fffd60001d000260002bffffefffd3
+prd @cycle 7: 00004fffef0001a0000b0000000008ffff40001e
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+Memory write to PSUM mem add 0 00006fffa3000640000cfffa0fffe0fffea00003 
+Memory write to PSUM mem add 1 000230000100023fffe0ffffc00002ffff00004b 
+Memory write to PSUM mem add 2 fffc6fffa50005400030fffde0000a0002cffff0 
+Memory write to PSUM mem add 3 00005fffd000050fffe7fffabfffaffffeafffbd 
+Memory write to PSUM mem add 4 00028ffff80004b00038fffd6fffdffffd20000b 
+Memory write to PSUM mem add 5 0004200040ffffd0002e000250005f00024ffff6 
+Memory write to PSUM mem add 6 0006100075fffd60001d000260002bffffefffd3 
+Memory write to PSUM mem add 7 00004fffef0001a0000b0000000008ffff40001e 
+##### SFP accumulation phase #####
+##### SFP division/normalization phase #####
+##### Simulated SFP normalized output #####
+sfp_out @row0: 00003fffd20003200006fffd0ffff0ffff500001
+sfp_out @row1: 000230000100023fffe0ffffc00002ffff00004b
+sfp_out @row2: fffedfffe20001c00010ffff5000030000effffb
+sfp_out @row3: 00001ffff00001affff8fffe4fffe5ffff9fffea
+sfp_out @row4: 00014ffffc000250001cfffebffff0fffe900005
+sfp_out @row5: 0002100020fffff00017000120002f00012ffffb
+sfp_out @row6: 0002000027ffff2000090000c0000e00000ffff1
+sfp_out @row7: 00004fffef0001a0000b0000000008ffff40001e
+##### Expected SFP normalized result #####
+row 0: abs_sum=364  norm_divisor=2
+  col 0: result=6  expected_sfp_out=3
+  col 1: result=-93  expected_sfp_out=-46
+  col 2: result=100  expected_sfp_out=50
+  col 3: result=12  expected_sfp_out=6
+  col 4: result=-96  expected_sfp_out=-48
+  col 5: result=-32  expected_sfp_out=-16
+  col 6: result=-22  expected_sfp_out=-11
+  col 7: result=3  expected_sfp_out=1
+row 1: abs_sum=200  norm_divisor=1
+  col 0: result=35  expected_sfp_out=35
+  col 1: result=1  expected_sfp_out=1
+  col 2: result=35  expected_sfp_out=35
+  col 3: result=-32  expected_sfp_out=-32
+  col 4: result=-4  expected_sfp_out=-4
+  col 5: result=2  expected_sfp_out=2
+  col 6: result=-16  expected_sfp_out=-16
+  col 7: result=75  expected_sfp_out=75
+row 2: abs_sum=385  norm_divisor=3
+  col 0: result=-58  expected_sfp_out=-19
+  col 1: result=-91  expected_sfp_out=-30
+  col 2: result=84  expected_sfp_out=28
+  col 3: result=48  expected_sfp_out=16
+  col 4: result=-34  expected_sfp_out=-11
+  col 5: result=10  expected_sfp_out=3
+  col 6: result=44  expected_sfp_out=14
+  col 7: result=-16  expected_sfp_out=-5
+row 3: abs_sum=413  norm_divisor=3
+  col 0: result=5  expected_sfp_out=1
+  col 1: result=-48  expected_sfp_out=-16
+  col 2: result=80  expected_sfp_out=26
+  col 3: result=-25  expected_sfp_out=-8
+  col 4: result=-85  expected_sfp_out=-28
+  col 5: result=-81  expected_sfp_out=-27
+  col 6: result=-22  expected_sfp_out=-7
+  col 7: result=-67  expected_sfp_out=-22
+row 4: abs_sum=311  norm_divisor=2
+  col 0: result=40  expected_sfp_out=20
+  col 1: result=-8  expected_sfp_out=-4
+  col 2: result=75  expected_sfp_out=37
+  col 3: result=56  expected_sfp_out=28
+  col 4: result=-42  expected_sfp_out=-21
+  col 5: result=-33  expected_sfp_out=-16
+  col 6: result=-46  expected_sfp_out=-23
+  col 7: result=11  expected_sfp_out=5
+row 5: abs_sum=357  norm_divisor=2
+  col 0: result=66  expected_sfp_out=33
+  col 1: result=64  expected_sfp_out=32
+  col 2: result=-3  expected_sfp_out=-1
+  col 3: result=46  expected_sfp_out=23
+  col 4: result=37  expected_sfp_out=18
+  col 5: result=95  expected_sfp_out=47
+  col 6: result=36  expected_sfp_out=18
+  col 7: result=-10  expected_sfp_out=-5
+row 6: abs_sum=413  norm_divisor=3
+  col 0: result=97  expected_sfp_out=32
+  col 1: result=117  expected_sfp_out=39
+  col 2: result=-42  expected_sfp_out=-14
+  col 3: result=29  expected_sfp_out=9
+  col 4: result=38  expected_sfp_out=12
+  col 5: result=43  expected_sfp_out=14
+  col 6: result=-2  expected_sfp_out=0
+  col 7: result=-45  expected_sfp_out=-15
+row 7: abs_sum=108  norm_divisor=1
+  col 0: result=4  expected_sfp_out=4
+  col 1: result=-17  expected_sfp_out=-17
+  col 2: result=26  expected_sfp_out=26
+  col 3: result=11  expected_sfp_out=11
+  col 4: result=0  expected_sfp_out=0
+  col 5: result=8  expected_sfp_out=8
+  col 6: result=-12  expected_sfp_out=-12
+  col 7: result=30  expected_sfp_out=30

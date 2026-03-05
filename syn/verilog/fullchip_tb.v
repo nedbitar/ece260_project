@@ -67,6 +67,7 @@ assign inst[0] = pmem_wr;
 reg [bw_psum-1:0] temp5b;
 reg [bw_psum+3:0] temp_sum;
 reg [bw_psum*col-1:0] temp16b;
+wire [bw_psum*col-1:0] out;
 
 
 
@@ -74,6 +75,7 @@ fullchip #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) fullchip_instance (
       .reset(reset),
       .clk(clk), 
       .mem_in(mem_in), 
+      .out(out),
       .inst(inst)
 );
 

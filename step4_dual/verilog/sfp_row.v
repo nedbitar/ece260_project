@@ -1,13 +1,13 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_out);
+module sfp_row (clk, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_out);
 
   parameter col = 8;
   parameter bw = 8;
   parameter bw_psum = 2*bw+4;
 
  
-  input  clk, reset, div, acc, fifo_ext_rd;
+  input  clk, div, acc, fifo_ext_rd;
   input  [bw_psum+3:0] sum_in;
   input  [col*bw_psum-1:0] sfp_in;
   wire  [col*bw_psum-1:0] abs;
@@ -15,6 +15,7 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
   output [col*bw_psum-1:0] sfp_out;
   output [bw_psum+3:0] sum_out;
   wire [bw_psum+3:0] sum_this_core;
+  wire signed [bw_psum-1:0] sum_2core;
   wire signed [bw_psum-1:0] sfp_in_sign0;
   wire signed [bw_psum-1:0] sfp_in_sign1;
   wire signed [bw_psum-1:0] sfp_in_sign2;
@@ -57,10 +58,7 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
   assign sfp_out[bw_psum*8-1 : bw_psum*7] = sfp_out_sign7;
 
 
-  wire signed [bw_psum-1:0] sum_2core_raw;
-  wire signed [bw_psum-1:0] sum_2core;
-  assign sum_2core_raw = sum_this_core[bw_psum+3:7] + sum_in[bw_psum+3:7];
-  assign sum_2core = (sum_2core_raw == 0) ? 1 : sum_2core_raw;
+  assign sum_2core = sum_this_core[bw_psum+3:7] + sum_in[bw_psum+3:7];
 
   assign abs[bw_psum*1-1 : bw_psum*0] = (sfp_in[bw_psum*1-1]) ?  (~sfp_in[bw_psum*1-1 : bw_psum*0] + 1)  :  sfp_in[bw_psum*1-1 : bw_psum*0];
   assign abs[bw_psum*2-1 : bw_psum*1] = (sfp_in[bw_psum*2-1]) ?  (~sfp_in[bw_psum*2-1 : bw_psum*1] + 1)  :  sfp_in[bw_psum*2-1 : bw_psum*1];
@@ -76,8 +74,8 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
      .wr_clk(clk), 
      .in(sum_q),
      .out(sum_this_core), 
-     .rd(div),
-     .wr(fifo_wr),
+     .rd(div_q), 
+     .wr(fifo_wr), 
      .reset(reset)
   );
 

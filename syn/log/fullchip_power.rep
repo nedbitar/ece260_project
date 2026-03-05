@@ -1,4 +1,5 @@
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
@@ -7,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Mon Mar  2 14:57:30 2026
+Date   : Thu Mar  5 14:47:07 2026
 ****************************************
 
 
@@ -22,33 +23,33 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 fullchip               ZeroWireload      tcbn65gpluswc
-core_col8_bw8_bw_psum20_pr16
+core_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gpluswc
-mac_array_col8_bw8_bw_psum20_pr16
+mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gpluswc
 ofifo_col8_bw20        ZeroWireload      tcbn65gpluswc
-sram_w16_sram_bit128_1 ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id1
+sram_w16_sram_bit64_1  ZeroWireload      tcbn65gpluswc
+mac_col_bw8_bw_psum20_pr8_col_id1
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id2
+mac_col_bw8_bw_psum20_pr8_col_id2
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id3
+mac_col_bw8_bw_psum20_pr8_col_id3
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id4
+mac_col_bw8_bw_psum20_pr8_col_id4
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id5
+mac_col_bw8_bw_psum20_pr8_col_id5
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id6
+mac_col_bw8_bw_psum20_pr8_col_id6
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id7
+mac_col_bw8_bw_psum20_pr8_col_id7
                        ZeroWireload      tcbn65gpluswc
-mac_col_bw8_bw_psum20_pr16_col_id8
+mac_col_bw8_bw_psum20_pr8_col_id8
                        ZeroWireload      tcbn65gpluswc
 fifo_depth16_bw20_simd1_7
                        ZeroWireload      tcbn65gpluswc
 fifo_depth16_bw20_simd1_6
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_7
+mac_8in_bw8_bw_psum20_pr8_7
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_16_1_bw20_simd1_7
                        ZeroWireload      tcbn65gpluswc
@@ -58,20 +59,60 @@ fifo_mux_8_1_bw20_simd1_15
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_2_1_bw20_simd1_119
                        ZeroWireload      tcbn65gpluswc
-sram_w16_sram_bit128_0 ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_0
+sram_w16_sram_bit64_0  ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_0
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_1
+fifo_depth16_bw20_simd1_1
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_2
+fifo_depth16_bw20_simd1_2
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_3
+fifo_depth16_bw20_simd1_3
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_4
+fifo_depth16_bw20_simd1_4
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_5
+fifo_depth16_bw20_simd1_5
                        ZeroWireload      tcbn65gpluswc
-mac_16in_bw8_bw_psum20_pr16_6
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_7
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_8
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_9
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_10
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_11
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_12
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_13
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_14
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_2_1_bw20_simd1_0
                        ZeroWireload      tcbn65gpluswc
@@ -311,59 +352,19 @@ fifo_mux_2_1_bw20_simd1_117
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_2_1_bw20_simd1_118
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_0
+mac_8in_bw8_bw_psum20_pr8_0
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_1
+mac_8in_bw8_bw_psum20_pr8_1
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_2
+mac_8in_bw8_bw_psum20_pr8_2
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_3
+mac_8in_bw8_bw_psum20_pr8_3
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_4
+mac_8in_bw8_bw_psum20_pr8_4
                        ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_5
+mac_8in_bw8_bw_psum20_pr8_5
                        ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_5
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_6
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_7
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_8
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_9
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_10
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_11
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_12
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_13
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_14
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_5
+mac_8in_bw8_bw_psum20_pr8_6
                        ZeroWireload      tcbn65gpluswc
 
 
@@ -376,13 +377,14 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  61.1495 mW   (98%)
-  Net Switching Power  =   1.3909 mW    (2%)
+  Cell Internal Power  =   2.6437 mW   (89%)
+  Net Switching Power  = 312.8925 uW   (11%)
                          ---------
-Total Dynamic Power    =  62.5404 mW  (100%)
+Total Dynamic Power    =   2.9566 mW  (100%)
 
-Cell Leakage Power     =   1.8743 mW
+Cell Leakage Power     = 774.3641 uW
 
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
@@ -391,9 +393,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          58.6703            0.2080        5.7462e+05           59.4527  (  92.30%)
-sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.4793            1.1829        1.2997e+06            4.9619  (   7.70%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         2.5260        3.0552e-03        3.3835e+05            2.8674  (  76.85%)
+combinational      0.1177            0.3098        4.3601e+05            0.8636  (  23.15%)
 --------------------------------------------------------------------------------------------------
-Total             61.1497 mW         1.3909 mW     1.8743e+06 nW        64.4146 mW
+Total              2.6437 mW         0.3129 mW     7.7436e+05 nW         3.7310 mW
 1

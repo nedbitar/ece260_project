@@ -15,6 +15,7 @@ input  clk;
 input  [16:0] inst; 
 input  reset;
 
+wire  fifo_valid;
 wire  [pr*bw-1:0] mac_in;
 wire  [pr*bw-1:0] kmem_out;
 wire  [pr*bw-1:0] qmem_out;
@@ -37,7 +38,6 @@ wire  pmem_wr;
 assign ofifo_rd = inst[16];
 assign qkmem_add = inst[15:12];
 assign pmem_add = inst[11:8];
-assign out = fifo_out;
 
 assign qmem_rd = inst[5];
 assign qmem_wr = inst[4];
@@ -48,6 +48,8 @@ assign pmem_wr = inst[0];
 
 assign mac_in  = inst[6] ? kmem_out : qmem_out;
 assign pmem_in = fifo_out;
+
+assign out = fifo_out;
 
 mac_array #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_array_instance (
         .in(mac_in), 
