@@ -1,8 +1,8 @@
 set top_module fullchip
-set rtlPath "./verilog"
+set rtlPath "/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/verilog"
 
 # Target library
-set target_library /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/db/tcbn65gplustc.db
+set target_library /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/db/tcbn65gpluswc.db
 set link_library $target_library
 set symbol_library {}
 set wire_load_mode enclosed
@@ -47,7 +47,7 @@ analyze -format verilog -lib WORK verilog/core.v
 analyze -format verilog -lib WORK verilog/sync.v
 analyze -format verilog -lib WORK verilog/sfp_row.v
 analyze -format verilog -lib WORK verilog/mac_col.v
-analyze -format verilog -lib WORK verilog/mac_16in.v
+analyze -format verilog -lib WORK verilog/mac_8in.v
 analyze -format verilog -lib WORK verilog/mac_array.v
 analyze -format verilog -lib WORK verilog/sram_w16.v
 analyze -format verilog -lib WORK verilog/ofifo.v
