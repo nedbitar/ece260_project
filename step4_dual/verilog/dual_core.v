@@ -22,12 +22,11 @@ input                    acc1, div1, sfp_ext_rd1;
 output [bw_psum*col-1:0] out0, out1;
 output [bw_psum*col-1:0] sfp_out0, sfp_out1;
 
-// raw MAC outputs from each core
 wire [bw_psum*col-1:0] core_out0, core_out1;
 
 // sum wires
 wire [bw_psum+3:0] sum_out0, sum_out1;  // partial sums from each sfp_row
-wire [bw_psum+3:0] sum_in0,  sum_in1;   // other core's sum after CDC
+wire [bw_psum+3:0] sum_in0,  sum_in1;
 
 // async FIFO empty signals
 wire empty_0to1, empty_1to0;

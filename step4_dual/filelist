@@ -1,4 +1,6 @@
-./verilog/fullchip.v
+./verilog/dual_core_tb.v
+./verilog/dual_core.v
+./verilog/async_fifo.v
 ./verilog/core.v
 ./verilog/sync.v
 ./verilog/sfp_row.v
@@ -12,7 +14,3 @@
 ./verilog/fifo_mux_16_1.v
 ./verilog/fifo_mux_8_1.v
 ./verilog/fifo_mux_2_1.v
-./verilog/async_fifo.v
-./verilog/async_fifo_tb.v
-./verilog/dual_core.v
-./verilog/dual_core_tb.v
