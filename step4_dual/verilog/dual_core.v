@@ -53,6 +53,7 @@ core #(.col(col), .bw(bw), .pr(pr)) core1 (
 
 // sfp_row instances 
 sfp_row #(.col(col), .bw(bw), .bw_psum(bw_psum)) sfp0 (
+    .reset(reset),
     .clk(clk0),
     .acc(acc0),
     .div(div0),
@@ -64,6 +65,7 @@ sfp_row #(.col(col), .bw(bw), .bw_psum(bw_psum)) sfp0 (
 );
 
 sfp_row #(.col(col), .bw(bw), .bw_psum(bw_psum)) sfp1 (
+    .reset(reset),
     .clk(clk1),
     .acc(acc1),
     .div(div1),
