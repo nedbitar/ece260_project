@@ -1,1 +1,4 @@
 /.claude
+/step4_dual/compiled
+/step4_dual/sim
+/step4_dual/*.vcd
