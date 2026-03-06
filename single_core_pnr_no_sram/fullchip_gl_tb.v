@@ -320,28 +320,34 @@ $display("##### Read from pmem and verify #####");
   pmem_rd = 1;
   pmem_add = 0;
 
+  // Prime the registered SRAM read: posedge loads addr 0 into Q
+  // without this, cycle 0 reads X (NBA not yet applied at first posedge)
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;
+
   for (q=0; q<total_cycle; q=q+1) begin
     #0.5 clk = 1'b0;
-    // pmem_add already equals q before this posedge
+    if (q < total_cycle-1) pmem_add = pmem_add + 1;
+    // else: hold pmem_add so last addr is re-read (harmless), keeping pmem_rd=1
     #0.5 clk = 1'b1;
-    // sram_w16 registered read: out = pmem_out = memory[pmem_add] now valid
+    // out = pmem_out = memory[q]: NBA from previous posedge now applied
 
-    // Rebuild expected packed word for this cycle
+    // Recompute expected packed word for cycle q (same packing as prd display)
+    temp16b = 0;
     for (j=0; j<col; j=j+1) begin
       temp5b = result[q][j];
       temp16b = {temp16b[bw_psum*col-bw_psum-1:0], temp5b};
     end
 
-    // Compare each column result
+    // out[j*bw_psum +: bw_psum] = mac col (col-1-j) = result[q][col-1-j]
     for (j=0; j<col; j=j+1) begin
-      temp5b = result[q][j];
-      if (out[bw_psum*(j+1)-1:bw_psum*j] !== temp5b)
+      m = col-1-j;
+      temp5b = result[q][m];
+      if (out[j*bw_psum +: bw_psum] !== temp5b)
         $display("FAIL @cycle%0d col%0d: got %0h, expected %0h",
-                 q, j, out[bw_psum*(j+1)-1:bw_psum*j], temp5b);
+                 q, m, out[j*bw_psum +: bw_psum], temp5b);
     end
     $display("pmem rd @cycle%2d: %40h  (expected: %40h)", q, out, temp16b);
-
-    if (q < total_cycle-1) pmem_add = pmem_add + 1;
   end
 
   #0.5 clk = 1'b0;
