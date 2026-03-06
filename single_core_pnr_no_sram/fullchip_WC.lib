@@ -1,6 +1,6 @@
 library (fullchip ){
   delay_model : table_lookup;
-  date : "Tue Mar  3 15:48:30 2026" ;
+  date : "Thu Mar  5 16:31:02 2026" ;
   revision : "0.0" ;
   bus_naming_style : "%s[%d]" ;
   capacitive_load_unit ( 1.0000,pf);
