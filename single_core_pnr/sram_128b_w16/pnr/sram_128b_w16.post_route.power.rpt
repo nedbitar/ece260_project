@@ -1,0 +1,92 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2026-Mar-05 14:59:12 (2026-Mar-05 22:59:12 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: sram_128b_w16
+*
+*	Liberty Libraries used: 
+*	        WC_VIEW: /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/lib/tcbn65gpluswc.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:        0.9 
+*
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile sram_128b_w16.post_route.power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.13459163 	   72.0557%
+Total Switching Power:       0.87359880 	   15.2247%
+Total Leakage Power:         0.72985680 	   12.7196%
+Total Power:                 5.73804735 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.866     0.06674      0.1181       4.051        70.6 
+Macro                                  0           0      0.5891      0.5891       10.27 
+IO                                     0           0           0           0           0 
+Combinational                    0.05148      0.1272     0.01694      0.1956       3.409 
+Clock (Combinational)             0.2166      0.6797    0.005717       0.902       15.72 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              4.135      0.8736      0.7299       5.738         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      4.135      0.8736      0.7299       5.738         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+CLK                               0.2166      0.6797    0.005717       0.902       15.72 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)      0.2166      0.6797    0.005717       0.902       15.72 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:   CTS_ccl_BUF_CLK_G0_L2_4 (CKBD16): 	   0.03641 
+* 		Highest Leakage Power:   CTS_ccl_BUF_CLK_G0_L1_1 (CKBD16): 	 0.0002228 
+* 		Total Cap: 	2.19695e-11 F
+* 		Total instances in design: 18715
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap: 15096
+-----------------------------------------------------------------------------------------
+

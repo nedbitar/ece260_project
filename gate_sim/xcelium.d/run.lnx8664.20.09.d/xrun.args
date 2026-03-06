@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-define
+INITIALIZE_MEMORY
+-xminitialize
+0
++gui
++access+rwc
++xm64bit
++xmstatus
++xmtimescale+1ns/1ps
++xmoveride_timescale
+-v
+./netlist/fullchip.out.v
+-v
+./netlist/tcbn65gplus.v
+./netlist/fullchip_tb.v

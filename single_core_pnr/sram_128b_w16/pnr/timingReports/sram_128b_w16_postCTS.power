@@ -1,0 +1,96 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2026-Mar-05 13:40:29 (2026-Mar-05 21:40:29 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: sram_128b_w16
+*
+*	Liberty Libraries used: 
+*	        WC_VIEW: /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/lib/tcbn65gpluswc.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:        0.9 
+*
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./timingReports/sram_128b_w16_postCTS.power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.13649368 	   71.1412%
+Total Switching Power:       0.94804702 	   16.3049%
+Total Leakage Power:         0.72994056 	   12.5538%
+Total Power:                 5.81448133 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.867     0.06382      0.1181       4.049       69.64 
+Macro                                  0           0      0.5891      0.5891       10.13 
+IO                                     0           0           0           0           0 
+Combinational                    0.05228      0.1501     0.01703      0.2194       3.773 
+Clock (Combinational)             0.2169      0.7341    0.005717      0.9568       16.45 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              4.136       0.948      0.7299       5.814         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      4.136       0.948      0.7299       5.814         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+CLK                               0.2169      0.7341    0.005717      0.9568       16.45 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)      0.2169      0.7341    0.005717      0.9568       16.45 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:   CTS_ccl_BUF_CLK_G0_L2_4 (CKBD16): 	   0.03823 
+* 		Highest Leakage Power:   CTS_ccl_BUF_CLK_G0_L1_1 (CKBD16): 	 0.0002228 
+* 		Total Cap: 	2.44631e-11 F
+* 		Total instances in design: 18715
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap: 15096
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 0.729941 mW
+ Cell usage statistics:  
+ Library tcbn65gpluswc , 18715 cells ( 100.000000%) , 0.729941 mW ( 100.000000%  ) 
+ 

@@ -1,0 +1,930 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 20
+        -transition_time
+        -capacitance
+Design : sram_128b_w16
+Version: K-2015.06-SP2
+Date   : Tue Mar  3 13:21:12 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[25] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2765/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2301 (net)                    1         0.00                0.00       0.47 r
+  U1886/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2303 (net)                    1         0.00                0.00       0.59 r
+  U1499/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[25] (net)                    1         0.05                0.00       0.90 f
+  Q[25] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[24] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2717/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2241 (net)                    1         0.00                0.00       0.47 r
+  U1885/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2243 (net)                    1         0.00                0.00       0.59 r
+  U2720/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[24] (net)                    1         0.05                0.00       0.90 f
+  Q[24] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[23] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2742/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2271 (net)                    1         0.00                0.00       0.47 r
+  U1883/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2273 (net)                    1         0.00                0.00       0.59 r
+  U2744/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[23] (net)                    1         0.05                0.00       0.90 f
+  Q[23] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[22] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2799/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2352 (net)                    1         0.00                0.00       0.47 r
+  U1881/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2354 (net)                    1         0.00                0.00       0.59 r
+  U1498/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[22] (net)                    1         0.05                0.00       0.90 f
+  Q[22] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[21] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U1960/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2331 (net)                    1         0.00                0.00       0.47 r
+  U1879/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2333 (net)                    1         0.00                0.00       0.59 r
+  U1497/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[21] (net)                    1         0.05                0.00       0.90 f
+  Q[21] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[20] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2750/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2281 (net)                    1         0.00                0.00       0.47 r
+  U1877/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2283 (net)                    1         0.00                0.00       0.59 r
+  U1496/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[20] (net)                    1         0.05                0.00       0.90 f
+  Q[20] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[19] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2791/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2341 (net)                    1         0.00                0.00       0.47 r
+  U1875/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2343 (net)                    1         0.00                0.00       0.59 r
+  U1495/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[19] (net)                    1         0.05                0.00       0.90 f
+  Q[19] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[18] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2734/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2261 (net)                    1         0.00                0.00       0.47 r
+  U1873/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2263 (net)                    1         0.00                0.00       0.59 r
+  U1494/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[18] (net)                    1         0.05                0.00       0.90 f
+  Q[18] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[17] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2778/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2321 (net)                    1         0.00                0.00       0.47 r
+  U2005/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2323 (net)                    1         0.00                0.00       0.59 r
+  U1493/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[17] (net)                    1         0.05                0.00       0.90 f
+  Q[17] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[16] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2710/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2231 (net)                    1         0.00                0.00       0.47 r
+  U1870/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2233 (net)                    1         0.00                0.00       0.59 r
+  U1492/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[16] (net)                    1         0.05                0.00       0.90 f
+  Q[16] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[15] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2757/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2291 (net)                    1         0.00                0.00       0.47 r
+  U1868/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2293 (net)                    1         0.00                0.00       0.59 r
+  U1491/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[15] (net)                    1         0.05                0.00       0.90 f
+  Q[15] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[14] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2726/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2251 (net)                    1         0.00                0.00       0.47 r
+  U1866/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2253 (net)                    1         0.00                0.00       0.59 r
+  U1490/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[14] (net)                    1         0.05                0.00       0.90 f
+  Q[14] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[13] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2771/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n2311 (net)                    1         0.00                0.00       0.47 r
+  U1864/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n2313 (net)                    1         0.00                0.00       0.59 r
+  U1489/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[13] (net)                    1         0.05                0.00       0.90 f
+  Q[13] (out)                                        0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[5] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2273/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n1678 (net)                    1         0.00                0.00       0.47 r
+  U1862/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n1680 (net)                    1         0.00                0.00       0.59 r
+  U2011/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[5] (net)                     1         0.05                0.00       0.90 f
+  Q[5] (out)                                         0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[0] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_3_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_3_/Q (EDFQD1)                            0.05      0.12       0.12 r
+  add_q[3] (net)                 3         0.00                0.00       0.12 r
+  U2021/ZN (INVD1)                                   0.03      0.03       0.15 f
+  n1372 (net)                    2         0.00                0.00       0.15 f
+  U1516/ZN (ND2D1)                                   0.13      0.08       0.22 r
+  n1378 (net)                    4         0.01                0.00       0.22 r
+  U2026/ZN (NR2D2)                                   0.07      0.07       0.29 f
+  n1633 (net)                   24         0.02                0.00       0.29 f
+  U1744/Z (CKBD4)                                    0.08      0.09       0.38 f
+  n2349 (net)                   55         0.04                0.00       0.38 f
+  U2205/ZN (AOI22D0)                                 0.08      0.08       0.47 r
+  n1593 (net)                    1         0.00                0.00       0.47 r
+  U1859/Z (AN4D0)                                    0.05      0.13       0.59 r
+  n1595 (net)                    1         0.00                0.00       0.59 r
+  U2010/ZN (ND2D1)                                   0.51      0.31       0.90 f
+  Q[0] (net)                     1         0.05                0.00       0.90 f
+  Q[0] (out)                                         0.51      0.00       0.90 f
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[80] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_1_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_1_/Q (EDFQD1)                            0.04      0.14       0.14 f
+  add_q[1] (net)                 3         0.00                0.00       0.14 f
+  U2012/ZN (INVD1)                                   0.04      0.03       0.18 r
+  n1364 (net)                    2         0.00                0.00       0.18 r
+  U1517/ZN (ND2D1)                                   0.12      0.08       0.26 f
+  n1376 (net)                    4         0.01                0.00       0.26 f
+  U1785/ZN (NR2D0)                                   0.08      0.07       0.33 r
+  n1576 (net)                    1         0.00                0.00       0.33 r
+  U1748/Z (BUFFD3)                                   0.19      0.14       0.48 r
+  n1343 (net)                   78         0.06                0.00       0.48 r
+  U2136/Z (CKBD1)                                    0.17      0.14       0.62 r
+  n1904 (net)                   24         0.02                0.00       0.62 r
+  U2377/ZN (AOI22D0)                                 0.08      0.07       0.68 f
+  n1803 (net)                    1         0.00                0.00       0.68 f
+  U1661/Z (AN4D0)                                    0.04      0.09       0.77 f
+  n1812 (net)                    1         0.00                0.00       0.77 f
+  U2382/ZN (ND2D2)                                   0.22      0.13       0.90 r
+  Q[80] (net)                    1         0.05                0.00       0.90 r
+  Q[80] (out)                                        0.22      0.00       0.90 r
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[79] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_1_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_1_/Q (EDFQD1)                            0.04      0.14       0.14 f
+  add_q[1] (net)                 3         0.00                0.00       0.14 f
+  U2012/ZN (INVD1)                                   0.04      0.03       0.18 r
+  n1364 (net)                    2         0.00                0.00       0.18 r
+  U1517/ZN (ND2D1)                                   0.12      0.08       0.26 f
+  n1376 (net)                    4         0.01                0.00       0.26 f
+  U1785/ZN (NR2D0)                                   0.08      0.07       0.33 r
+  n1576 (net)                    1         0.00                0.00       0.33 r
+  U1748/Z (BUFFD3)                                   0.19      0.14       0.48 r
+  n1343 (net)                   78         0.06                0.00       0.48 r
+  U2136/Z (CKBD1)                                    0.17      0.14       0.62 r
+  n1904 (net)                   24         0.02                0.00       0.62 r
+  U2369/ZN (AOI22D0)                                 0.08      0.07       0.68 f
+  n1793 (net)                    1         0.00                0.00       0.68 f
+  U1654/Z (AN4D0)                                    0.04      0.09       0.77 f
+  n1802 (net)                    1         0.00                0.00       0.77 f
+  U2373/ZN (ND2D2)                                   0.22      0.13       0.90 r
+  Q[79] (net)                    1         0.05                0.00       0.90 r
+  Q[79] (out)                                        0.22      0.00       0.90 r
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[78] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_1_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_1_/Q (EDFQD1)                            0.04      0.14       0.14 f
+  add_q[1] (net)                 3         0.00                0.00       0.14 f
+  U2012/ZN (INVD1)                                   0.04      0.03       0.18 r
+  n1364 (net)                    2         0.00                0.00       0.18 r
+  U1517/ZN (ND2D1)                                   0.12      0.08       0.26 f
+  n1376 (net)                    4         0.01                0.00       0.26 f
+  U1785/ZN (NR2D0)                                   0.08      0.07       0.33 r
+  n1576 (net)                    1         0.00                0.00       0.33 r
+  U1748/Z (BUFFD3)                                   0.19      0.14       0.48 r
+  n1343 (net)                   78         0.06                0.00       0.48 r
+  U2136/Z (CKBD1)                                    0.17      0.14       0.62 r
+  n1904 (net)                   24         0.02                0.00       0.62 r
+  U2361/ZN (AOI22D0)                                 0.08      0.07       0.68 f
+  n1783 (net)                    1         0.00                0.00       0.68 f
+  U1670/Z (AN4D0)                                    0.04      0.09       0.77 f
+  n1792 (net)                    1         0.00                0.00       0.77 f
+  U2365/ZN (ND2D2)                                   0.22      0.13       0.90 r
+  Q[78] (net)                    1         0.05                0.00       0.90 r
+  Q[78] (out)                                        0.22      0.00       0.90 r
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[51] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_1_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_1_/Q (EDFQD1)                            0.04      0.14       0.14 f
+  add_q[1] (net)                 3         0.00                0.00       0.14 f
+  U2012/ZN (INVD1)                                   0.04      0.03       0.18 r
+  n1364 (net)                    2         0.00                0.00       0.18 r
+  U1517/ZN (ND2D1)                                   0.12      0.08       0.26 f
+  n1376 (net)                    4         0.01                0.00       0.26 f
+  U1785/ZN (NR2D0)                                   0.08      0.07       0.33 r
+  n1576 (net)                    1         0.00                0.00       0.33 r
+  U1748/Z (BUFFD3)                                   0.19      0.14       0.48 r
+  n1343 (net)                   78         0.06                0.00       0.48 r
+  U2136/Z (CKBD1)                                    0.17      0.14       0.62 r
+  n1904 (net)                   24         0.02                0.00       0.62 r
+  U2154/ZN (AOI22D0)                                 0.08      0.07       0.68 f
+  n1525 (net)                    1         0.00                0.00       0.68 f
+  U1599/Z (AN4D0)                                    0.04      0.09       0.77 f
+  n1535 (net)                    1         0.00                0.00       0.77 f
+  U2158/ZN (ND2D2)                                   0.22      0.13       0.90 r
+  Q[51] (net)                    1         0.05                0.00       0.90 r
+  Q[51] (out)                                        0.22      0.00       0.90 r
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+  Startpoint: add_q_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: Q[49] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_128b_w16      ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  add_q_reg_1_/CP (EDFQD1)                           0.00      0.00 #     0.00 r
+  add_q_reg_1_/Q (EDFQD1)                            0.04      0.14       0.14 f
+  add_q[1] (net)                 3         0.00                0.00       0.14 f
+  U2012/ZN (INVD1)                                   0.04      0.03       0.18 r
+  n1364 (net)                    2         0.00                0.00       0.18 r
+  U1517/ZN (ND2D1)                                   0.12      0.08       0.26 f
+  n1376 (net)                    4         0.01                0.00       0.26 f
+  U1785/ZN (NR2D0)                                   0.08      0.07       0.33 r
+  n1576 (net)                    1         0.00                0.00       0.33 r
+  U1748/Z (BUFFD3)                                   0.19      0.14       0.48 r
+  n1343 (net)                   78         0.06                0.00       0.48 r
+  U2136/Z (CKBD1)                                    0.17      0.14       0.62 r
+  n1904 (net)                   24         0.02                0.00       0.62 r
+  U2137/ZN (AOI22D0)                                 0.08      0.07       0.68 f
+  n1505 (net)                    1         0.00                0.00       0.68 f
+  U1614/Z (AN4D0)                                    0.04      0.09       0.77 f
+  n1514 (net)                    1         0.00                0.00       0.77 f
+  U2141/ZN (ND2D2)                                   0.22      0.13       0.90 r
+  Q[49] (net)                    1         0.05                0.00       0.90 r
+  Q[49] (out)                                        0.22      0.00       0.90 r
+  data arrival time                                                       0.90
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.10       0.90
+  data required time                                                      0.90
+  -------------------------------------------------------------------------------
+  data required time                                                      0.90
+  data arrival time                                                      -0.90
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.00
+
+
+1
