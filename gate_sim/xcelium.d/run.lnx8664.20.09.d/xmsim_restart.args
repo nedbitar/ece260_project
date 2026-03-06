@@ -1,0 +1,30 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++access+rwc
++xm64bit
++xmtimescale+1ns/1ps
++xmoverride_timescale
++notimingchecks
+-MESSAGES
+-XMINITIALIZE
+0
++EMGRLOG
+xrun.log
+-XLSTIME
+1772818248
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	20.09-s017"
+-XLNAME
+./xcelium.d/run.lnx8664.20.09.d/ieng6-ece-02.ucsd.edu_23233

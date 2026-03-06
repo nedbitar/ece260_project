@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-VFILE
+./fullchip.out.v
+-VFILE
+./tcbn65gplus.v
+-DEFINE
+INITIALIZE_MEMORY

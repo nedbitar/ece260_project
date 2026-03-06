@@ -1,0 +1,1 @@
+s1(06Mar2026:09:30:49):  xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v 
