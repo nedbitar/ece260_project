@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-define
+INITIALIZE_MEMORY
+-xminitialize
+0
++access+rwc
++xm64bit
++xmstatus
++xmtimescale+1ns/1ps
++xmoveride_timescale
++notimingchecks
+-v
+./fullchip.pnr.v
+-v
+./tcbn65gplus.v
+./fullchip_gl_tb.v

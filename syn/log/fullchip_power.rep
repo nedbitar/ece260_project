@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Thu Mar  5 17:34:35 2026
+Date   : Fri Mar  6 00:22:45 2026
 ****************************************
 
 
@@ -72,6 +72,18 @@ fifo_depth16_bw20_simd1_3
 fifo_depth16_bw20_simd1_4
                        ZeroWireload      tcbn65gpluswc
 fifo_depth16_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_5
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_8_1_bw20_simd1_0
                        ZeroWireload      tcbn65gpluswc
@@ -355,18 +367,6 @@ mac_8in_bw8_bw_psum20_pr8_5
                        ZeroWireload      tcbn65gpluswc
 mac_8in_bw8_bw_psum20_pr8_6
                        ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_5
-                       ZeroWireload      tcbn65gpluswc
 
 
 Global Operating Voltage = 0.9  
@@ -378,12 +378,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   3.8730 mW   (88%)
-  Net Switching Power  = 519.8461 uW   (12%)
+  Cell Internal Power  =   3.5576 mW   (88%)
+  Net Switching Power  = 506.5188 uW   (12%)
                          ---------
-Total Dynamic Power    =   4.3929 mW  (100%)
+Total Dynamic Power    =   4.0641 mW  (100%)
 
-Cell Leakage Power     = 956.2722 uW
+Cell Leakage Power     = 970.7746 uW
 
 Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
@@ -395,8 +395,8 @@ memory             0.0000            0.0000            0.0000            0.0000 
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
-sequential         3.7394        2.9645e-03        5.0116e+05            4.2436  (  79.33%)
-combinational      0.1336            0.5169        4.5512e+05            1.1056  (  20.67%)
+sequential         3.4184        3.0878e-03        4.9359e+05            3.9150  (  77.76%)
+combinational      0.1392            0.5034        4.7719e+05            1.1198  (  22.24%)
 --------------------------------------------------------------------------------------------------
-Total              3.8730 mW         0.5198 mW     9.5627e+05 nW         5.3491 mW
+Total              3.5576 mW         0.5065 mW     9.7077e+05 nW         5.0349 mW
 1

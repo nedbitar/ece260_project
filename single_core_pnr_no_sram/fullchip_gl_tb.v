@@ -82,11 +82,6 @@ $display("##### Q data txt reading #####");
 
   qk_file = $fopen("qdata.txt", "r");
 
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-
   for (q=0; q<total_cycle; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin
       qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
@@ -115,11 +110,6 @@ $display("##### K data txt reading #####");
   reset = 0;
 
   qk_file = $fopen("kdata.txt", "r");
-
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-  qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
 
   for (q=0; q<col; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin

@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++access+rwc
++xm64bit
++xmtimescale+1ns/1ps
++xmoverride_timescale
++notimingchecks
+-ACCESS
++rwc
+-timescale
+1ns/1ps
+-OVERRIDE_TIMESCALE
+-NOTIMINGCHECKS
+-MESSAGES
+-XMINITIALIZE
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

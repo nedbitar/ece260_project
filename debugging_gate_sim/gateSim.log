@@ -1,0 +1,100 @@
+TOOL:	xrun(64)	20.09-s017: Started on Mar 05, 2026 at 21:35:49 PST
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+Loading snapshot worklib.fullchip_tb:v .................... Done
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> run
+##### Q data txt reading #####
+##### K data txt reading #####
+##### Estimated multiplication result #####
+prd @cycle 0: 0005dfffecffff90005efffd0fffd3fffc1fffaa
+prd @cycle 1: 00034fffebfffb700018ffffbfffdffffd7fffe9
+prd @cycle 2: 000260001b000320003ffffe400015ffffdfffc9
+prd @cycle 3: 00021fffb6000110007dfffdbfffeffffe5fffcd
+prd @cycle 4: 00050ffff6ffff60000dfff76fffdbfffa6fffc8
+prd @cycle 5: 0002a000010001a000440000700007ffff8fffd3
+prd @cycle 6: fffed0003000063ffff9fffff000170002efffec
+prd @cycle 7: fffc10002900080fffd2fffff0004e0004a00025
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### Read from pmem and verify #####
+FAIL @cycle0 col7: got x, expected fffaa
+FAIL @cycle0 col6: got x, expected fffc1
+FAIL @cycle0 col5: got x, expected fffd3
+FAIL @cycle0 col4: got x, expected fffd0
+FAIL @cycle0 col3: got x, expected 5e
+FAIL @cycle0 col2: got x, expected ffff9
+FAIL @cycle0 col1: got x, expected fffec
+FAIL @cycle0 col0: got x, expected 5d
+pmem rd @cycle 0: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 0005dfffecffff90005efffd0fffd3fffc1fffaa)
+FAIL @cycle1 col7: got x, expected fffe9
+FAIL @cycle1 col6: got x, expected fffd7
+FAIL @cycle1 col5: got x, expected fffdf
+FAIL @cycle1 col4: got x, expected ffffb
+FAIL @cycle1 col3: got x, expected 18
+FAIL @cycle1 col2: got x, expected fffb7
+FAIL @cycle1 col1: got x, expected fffeb
+FAIL @cycle1 col0: got x, expected 34
+pmem rd @cycle 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 00034fffebfffb700018ffffbfffdffffd7fffe9)
+FAIL @cycle2 col7: got x, expected fffc9
+FAIL @cycle2 col6: got x, expected ffffd
+FAIL @cycle2 col5: got x, expected 15
+FAIL @cycle2 col4: got x, expected fffe4
+FAIL @cycle2 col3: got x, expected 3f
+FAIL @cycle2 col2: got x, expected 32
+FAIL @cycle2 col1: got x, expected 1b
+FAIL @cycle2 col0: got x, expected 26
+pmem rd @cycle 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 000260001b000320003ffffe400015ffffdfffc9)
+FAIL @cycle3 col7: got x, expected fffcd
+FAIL @cycle3 col6: got x, expected fffe5
+FAIL @cycle3 col5: got x, expected fffef
+FAIL @cycle3 col4: got x, expected fffdb
+FAIL @cycle3 col3: got x, expected 7d
+FAIL @cycle3 col2: got x, expected 11
+FAIL @cycle3 col1: got x, expected fffb6
+FAIL @cycle3 col0: got x, expected 21
+pmem rd @cycle 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 00021fffb6000110007dfffdbfffeffffe5fffcd)
+FAIL @cycle4 col7: got x, expected fffc8
+FAIL @cycle4 col6: got x, expected fffa6
+FAIL @cycle4 col5: got x, expected fffdb
+FAIL @cycle4 col4: got x, expected fff76
+FAIL @cycle4 col3: got x, expected d
+FAIL @cycle4 col2: got x, expected ffff6
+FAIL @cycle4 col1: got x, expected ffff6
+FAIL @cycle4 col0: got x, expected 50
+pmem rd @cycle 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 00050ffff6ffff60000dfff76fffdbfffa6fffc8)
+FAIL @cycle5 col7: got x, expected fffd3
+FAIL @cycle5 col6: got x, expected ffff8
+FAIL @cycle5 col5: got x, expected 7
+FAIL @cycle5 col4: got x, expected 7
+FAIL @cycle5 col3: got x, expected 44
+FAIL @cycle5 col2: got x, expected 1a
+FAIL @cycle5 col1: got x, expected 1
+FAIL @cycle5 col0: got x, expected 2a
+pmem rd @cycle 5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: 0002a000010001a000440000700007ffff8fffd3)
+FAIL @cycle6 col7: got x, expected fffec
+FAIL @cycle6 col6: got x, expected 2e
+FAIL @cycle6 col5: got x, expected 17
+FAIL @cycle6 col4: got x, expected fffff
+FAIL @cycle6 col3: got x, expected ffff9
+FAIL @cycle6 col2: got x, expected 63
+FAIL @cycle6 col1: got x, expected 30
+FAIL @cycle6 col0: got x, expected fffed
+pmem rd @cycle 6: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: fffed0003000063ffff9fffff000170002efffec)
+FAIL @cycle7 col7: got x, expected 25
+FAIL @cycle7 col6: got x, expected 4a
+FAIL @cycle7 col5: got x, expected 4e
+FAIL @cycle7 col4: got x, expected fffff
+FAIL @cycle7 col3: got x, expected fffd2
+FAIL @cycle7 col2: got x, expected 80
+FAIL @cycle7 col1: got x, expected 29
+FAIL @cycle7 col0: got x, expected fffc1
+pmem rd @cycle 7: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  (expected: fffc10002900080fffd2fffff0004e0004a00025)
+Simulation complete via $finish(1) at time 101 NS + 0
+./fullchip_gl_tb.v:350   #10 $finish;
+xcelium> exit
+xmsim: Memory Usage - Final: 108.3M, Peak: 108.3M, Peak virtual: 225.4M
+xmsim: CPU Usage - 0.1s system + 0.5s user = 0.7s total (0.8s, 85.5% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 05, 2026 at 21:35:51 PST  (total: 00:00:02)
