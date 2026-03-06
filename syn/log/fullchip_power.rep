@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Thu Mar  5 14:47:07 2026
+Date   : Thu Mar  5 17:34:35 2026
 ****************************************
 
 
@@ -29,6 +29,7 @@ mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gpluswc
 ofifo_col8_bw20        ZeroWireload      tcbn65gpluswc
 sram_w16_sram_bit64_1  ZeroWireload      tcbn65gpluswc
+sram_w16_sram_bit160   ZeroWireload      tcbn65gpluswc
 mac_col_bw8_bw_psum20_pr8_col_id1
                        ZeroWireload      tcbn65gpluswc
 mac_col_bw8_bw_psum20_pr8_col_id2
@@ -71,18 +72,6 @@ fifo_depth16_bw20_simd1_3
 fifo_depth16_bw20_simd1_4
                        ZeroWireload      tcbn65gpluswc
 fifo_depth16_bw20_simd1_5
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_16_1_bw20_simd1_5
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_8_1_bw20_simd1_0
                        ZeroWireload      tcbn65gpluswc
@@ -366,6 +355,18 @@ mac_8in_bw8_bw_psum20_pr8_5
                        ZeroWireload      tcbn65gpluswc
 mac_8in_bw8_bw_psum20_pr8_6
                        ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_16_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
 
 
 Global Operating Voltage = 0.9  
@@ -377,12 +378,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   2.6437 mW   (89%)
-  Net Switching Power  = 312.8925 uW   (11%)
+  Cell Internal Power  =   3.8730 mW   (88%)
+  Net Switching Power  = 519.8461 uW   (12%)
                          ---------
-Total Dynamic Power    =   2.9566 mW  (100%)
+Total Dynamic Power    =   4.3929 mW  (100%)
 
-Cell Leakage Power     = 774.3641 uW
+Cell Leakage Power     = 956.2722 uW
 
 Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
@@ -394,8 +395,8 @@ memory             0.0000            0.0000            0.0000            0.0000 
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
-sequential         2.5260        3.0552e-03        3.3835e+05            2.8674  (  76.85%)
-combinational      0.1177            0.3098        4.3601e+05            0.8636  (  23.15%)
+sequential         3.7394        2.9645e-03        5.0116e+05            4.2436  (  79.33%)
+combinational      0.1336            0.5169        4.5512e+05            1.1056  (  20.67%)
 --------------------------------------------------------------------------------------------------
-Total              2.6437 mW         0.3129 mW     7.7436e+05 nW         3.7310 mW
+Total              3.8730 mW         0.5198 mW     9.5627e+05 nW         5.3491 mW
 1

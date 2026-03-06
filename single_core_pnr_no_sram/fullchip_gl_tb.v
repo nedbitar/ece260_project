@@ -1,36 +1,29 @@
-// Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
-// Please do not spread this code without permission
+// Gate-level simulation testbench for fullchip (single_core_pnr_no_sram)
+// DUT: fullchip.pnr.v  (re-synthesized after core.v pmem_rd fix)
+// Correctness check: store results in pmem, fetch back to out, compare vs TB-computed expected values
 
 `timescale 1ns/1ps
 
 module fullchip_tb;
 
-parameter total_cycle = 8;   // how many streamed Q vectors will be processed
-parameter bw = 8;            // Q & K vector bit precision
-parameter bw_psum = 2*bw+4;  // partial sum bit precision
-parameter pr = 8;            // how many products added in each dot product
-parameter col = 8;           // how many dot product units are equipped
+parameter total_cycle = 8;
+parameter bw = 8;
+parameter bw_psum = 2*bw+4;
+parameter pr = 8;
+parameter col = 8;
 
-integer qk_file ; // file handler
-integer qk_scan_file ; // file handler
-
-
-integer  captured_data;
-integer  weight [col*pr-1:0];
+integer qk_file;
+integer qk_scan_file;
+integer captured_data;
+integer weight [col*pr-1:0];
 `define NULL 0
 
+integer K[col-1:0][pr-1:0];
+integer Q[total_cycle-1:0][pr-1:0];
+integer result[total_cycle-1:0][col-1:0];
+integer sum[total_cycle-1:0];
 
-
-
-integer  K[col-1:0][pr-1:0];
-integer  Q[total_cycle-1:0][pr-1:0];
-integer  result[total_cycle-1:0][col-1:0];
-integer  sum[total_cycle-1:0];
-
-integer i,j,k,t,p,q,s,u, m;
-
-
-
+integer i,j,k,t,p,q,s,u,m;
 
 reg reset = 1;
 reg clk = 0;
@@ -48,7 +41,6 @@ reg load = 0;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
 
-
 assign inst[16] = ofifo_rd;
 assign inst[15:12] = qkmem_add;
 assign inst[11:8]  = pmem_add;
@@ -61,16 +53,13 @@ assign inst[2] = kmem_wr;
 assign inst[1] = pmem_rd;
 assign inst[0] = pmem_wr;
 
-
-
 reg [bw_psum-1:0] temp5b;
 reg [bw_psum+3:0] temp_sum;
 reg [bw_psum*col-1:0] temp16b;
 wire [bw_psum*col-1:0] out;
 
-
-
-fullchip #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) fullchip_instance (
+// Instantiate gate-level netlist (fullchip.pnr.v)
+fullchip fullchip_instance (
       .reset(reset),
       .clk(clk),
       .mem_in(mem_in),
@@ -78,32 +67,30 @@ fullchip #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) fullchip_instance (
       .inst(inst)
 );
 
-
 initial begin
 
-  $dumpfile("fullchip_tb.vcd");
-  $dumpvars(0,fullchip_tb);
+  $dumpfile("fullchip_gl_tb.vcd");
+  $dumpvars(0, fullchip_tb);
 
+  // Optional SDF back-annotation for timing-accurate sim:
+  // $sdf_annotate("fullchip.pnr.sdf", fullchip_instance);
 
 
 ///// Q data txt reading /////
 
 $display("##### Q data txt reading #####");
 
-
   qk_file = $fopen("qdata.txt", "r");
 
-  //// To get rid of first 3 lines in data file ////
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-
 
   for (q=0; q<total_cycle; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin
-          qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
-          Q[q][j] = captured_data;
+      qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
+      Q[q][j] = captured_data;
     end
   end
 /////////////////////////////////
@@ -115,8 +102,6 @@ $display("##### Q data txt reading #####");
     #0.5 clk = 1'b0;
     #0.5 clk = 1'b1;
   end
-
-
 
 
 ///// K data txt reading /////
@@ -131,19 +116,15 @@ $display("##### K data txt reading #####");
 
   qk_file = $fopen("kdata.txt", "r");
 
-  //// To get rid of first 4 lines in data file ////
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
-
-
-
 
   for (q=0; q<col; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin
-          qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
-          K[q][j] = captured_data;
+      qk_scan_file = $fscanf(qk_file, "%d\n", captured_data);
+      K[q][j] = captured_data;
     end
   end
 /////////////////////////////////
@@ -152,7 +133,6 @@ $display("##### K data txt reading #####");
 
 
 /////////////// Estimated result printing /////////////////
-
 
 $display("##### Estimated multiplication result #####");
 
@@ -201,7 +181,6 @@ $display("##### Qmem writing  #####");
     #0.5 clk = 1'b1;
 
   end
-
 
   #0.5 clk = 1'b0;
   qmem_wr = 0;
@@ -301,7 +280,6 @@ $display("##### execute #####");
   qmem_rd = 0; qkmem_add = 0; execute = 0;
   #0.5 clk = 1'b1;
 
-
 ///////////////////////////////////////////
 
  for (q=0; q<10; q=q+1) begin
@@ -333,9 +311,6 @@ $display("##### move ofifo to pmem #####");
   #0.5 clk = 1'b1;
 
 ///////////////////////////////////////////
-
-
-
 
 
 ///// Read back from pmem and verify /////
