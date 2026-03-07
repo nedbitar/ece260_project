@@ -2,6 +2,7 @@
 // File created by:  xrun
 // Do not modify this file
 //
+-clean
 -define
 INITIALIZE_MEMORY
 -xminitialize
@@ -16,3 +17,4 @@ INITIALIZE_MEMORY
 -v
 ./tcbn65gplus.v
 ./fullchip_gl_tb.v
+-gui

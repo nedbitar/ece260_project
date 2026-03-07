@@ -2,6 +2,7 @@
 unset LD_PRELOAD
 
 xrun \
+  -clean \
   -define INITIALIZE_MEMORY \
   -xminitialize 0 \
   +access+rwc \
@@ -11,4 +12,5 @@ xrun \
   +notimingchecks \
   -v ./fullchip.out.v \
   -v ./tcbn65gplus.v \
-  ./fullchip_gl_tb.v
+  ./fullchip_gl_tb.v \
+-gui

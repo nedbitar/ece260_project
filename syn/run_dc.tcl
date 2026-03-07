@@ -1,5 +1,5 @@
 set top_module fullchip
-set rtlPath "/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/verilog"
+set rtlPath "./verilog"
 
 # Target library
 set target_library /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/db/tcbn65gpluswc.db
@@ -44,8 +44,6 @@ set verilogout_single_bit false
 # Read RTL
 analyze -format verilog -lib WORK verilog/fullchip.v
 analyze -format verilog -lib WORK verilog/core.v
-analyze -format verilog -lib WORK verilog/sync.v
-analyze -format verilog -lib WORK verilog/sfp_row.v
 analyze -format verilog -lib WORK verilog/mac_col.v
 analyze -format verilog -lib WORK verilog/mac_8in.v
 analyze -format verilog -lib WORK verilog/mac_array.v

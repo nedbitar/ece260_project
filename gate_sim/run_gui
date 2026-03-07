@@ -1,0 +1,15 @@
+xrun \
+-define INITIALIZE_MEMORY \
+  -xminitialize 0 \
+  +gui \
+  +access+rwc \
+  +xm64bit \
+  +xmtimescale+1ns/1ps \
+  +xmoverride_timescale \
+  +notimingchecks \
+  -v ./fullchip.out.v \
+  -v ./tcbn65gplus.v \
+  ./fullchip_gl_tb.v
+
+#xmseq_udp_delay+20ns \
+

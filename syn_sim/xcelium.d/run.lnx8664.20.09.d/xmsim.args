@@ -7,13 +7,14 @@
 +xmtimescale+1ns/1ps
 +xmoverride_timescale
 +notimingchecks
+-gui
 -MESSAGES
 -XMINITIALIZE
 0
 +EMGRLOG
 xrun.log
 -XLSTIME
-1772818102
+1772838820
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.20.09.d

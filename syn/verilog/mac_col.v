@@ -36,10 +36,11 @@ mac_8in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_8in_instance (
 
 always @ (posedge clk) begin
   if (reset) begin
-    cnt_q <= 0;
-    load_ready_q <= 1;
-    inst_q <= 0;
-    inst_2q <= 0;
+    cnt_q <= 'b0;
+    load_ready_q <= 'b1;
+    inst_q <= 'b0;
+    inst_2q <= 'b0;
+
   end
   else begin
     inst_q <= i_inst;
@@ -47,16 +48,28 @@ always @ (posedge clk) begin
     if (inst_q[0]) begin
        query_q <= q_in;
        if (cnt_q == 9-col_id)begin
-         cnt_q <= 0;
          key_q <= q_in;
-         load_ready_q <= 0;
+         load_ready_q <= 'b0;
+         cnt_q <= 'b0;
        end
-       else if (load_ready_q)
+       else if (load_ready_q) begin
          cnt_q <= cnt_q + 1;
+         key_q <= key_q;
+         load_ready_q <= 'b1;
+       end
     end
     else if(inst_q[1]) begin
       //out     <= psum;
+      cnt_q <= cnt_q;
       query_q <= q_in;
+      key_q <= key_q;
+      load_ready_q <= load_ready_q;
+    end
+    else begin
+      cnt_q <=cnt_q;
+      query_q <= q_in;
+      key_q <= key_q;
+      load_ready_q <= load_ready_q;
     end
   end
 end
