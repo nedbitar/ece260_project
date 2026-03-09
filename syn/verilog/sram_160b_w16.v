@@ -1,8 +1,9 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module sram_160b_w16 (CLK, D, Q, CEN, WEN, A);
+module sram_160b_w16 (CLK, reset, D, Q, CEN, WEN, A);
 
   input  CLK;
+  input  reset;
   input  WEN;
   input  CEN;
   input  [159:0] D;
@@ -44,9 +45,16 @@ module sram_160b_w16 (CLK, D, Q, CEN, WEN, A);
              (add_q == 13) ? memory13 : (
              (add_q == 14) ? memory14 : memory15))))))))))))));
 
-  always @ (posedge CLK) begin
-
-   if (!CEN && WEN) // read 
+  always @ (posedge CLK or posedge reset) begin
+   if (reset) begin
+      add_q    <= 'b0;
+      memory0  <= 'b0; memory1  <= 'b0; memory2  <= 'b0; memory3  <= 'b0;
+      memory4  <= 'b0; memory5  <= 'b0; memory6  <= 'b0; memory7  <= 'b0;
+      memory8  <= 'b0; memory9  <= 'b0; memory10 <= 'b0; memory11 <= 'b0;
+      memory12 <= 'b0; memory13 <= 'b0; memory14 <= 'b0; memory15 <= 'b0;
+   end
+   else begin
+   if (!CEN && WEN) // read
       add_q <= A;
    if (!CEN && !WEN) // write
      case (A)
@@ -65,8 +73,9 @@ module sram_160b_w16 (CLK, D, Q, CEN, WEN, A);
       4'b1100: memory12 <= D; 
       4'b1101: memory13 <= D; 
       4'b1110: memory14 <= D; 
-      4'b1111: memory15 <= D; 
+      4'b1111: memory15 <= D;
     endcase
+   end
   end
 
 endmodule

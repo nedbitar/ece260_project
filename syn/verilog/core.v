@@ -73,28 +73,31 @@ ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (
 
 sram_w16 #(.sram_bit(pr*bw)) qmem_instance (
         .CLK(clk),
+        .reset(reset),
         .D(mem_in),
         .Q(qmem_out),
         .CEN(!(qmem_rd||qmem_wr)),
-        .WEN(!qmem_wr), 
+        .WEN(!qmem_wr),
         .A(qkmem_add)
 );
 
 sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
         .CLK(clk),
+        .reset(reset),
         .D(mem_in),
         .Q(kmem_out),
         .CEN(!(kmem_rd||kmem_wr)),
-        .WEN(!kmem_wr), 
+        .WEN(!kmem_wr),
         .A(qkmem_add)
 );
 
 sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
         .CLK(clk),
+        .reset(reset),
         .D(pmem_in),
         .Q(pmem_out),
         .CEN(!(pmem_rd||pmem_wr)),
-        .WEN(!pmem_wr), 
+        .WEN(!pmem_wr),
         .A(pmem_add)
 );
 

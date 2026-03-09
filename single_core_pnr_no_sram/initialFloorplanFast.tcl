@@ -1,8 +1,6 @@
-# Floorplan
+# Floorplan (Fast - no preplace timing analysis)
 # -r 1 = aspect ratio 1:1 (square), 0.50 = 50% utilization, margins = 10um on all sides
 floorPlan -site core -r 1 0.35 10.0 10.0 10.0 10.0
-
-timeDesign -preplace -prefix preplace
 
 globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
@@ -11,8 +9,6 @@ addRing -spacing {top 2 bottom 2 left 2 right 2} -width {top 3 bottom 3 left 3 r
 
 setAddStripeMode -break_at {block_ring}
 
-### Note: Change the number of stripes by looking at the layout ###
 addStripe -number_of_sets 2 -spacing 6 -layer M4 -width 2 -nets {VSS VDD}
-###################################################################
 
 sroute

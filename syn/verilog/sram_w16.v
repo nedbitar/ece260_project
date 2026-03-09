@@ -1,8 +1,9 @@
-module sram_w16 (CLK, D, Q, CEN, WEN, A);
+module sram_w16 (CLK, reset, D, Q, CEN, WEN, A);
 
   parameter sram_bit = 128;
 
   input                  CLK;
+  input                  reset;
   input                  WEN;
   input                  CEN;
   input  [sram_bit-1:0]  D;
@@ -11,8 +12,15 @@ module sram_w16 (CLK, D, Q, CEN, WEN, A);
 
   reg [sram_bit-1:0] memory [0:15];
 
-  always @(posedge CLK) begin
-    if (!CEN) begin
+  integer i;
+
+  always @(posedge CLK or posedge reset) begin
+    if (reset) begin
+      Q <= 'b0;
+      for (i = 0; i < 16; i = i + 1)
+        memory[i] <= 'b0;
+    end
+    else if (!CEN) begin
       if (!WEN) begin
         // write
         memory[A] <= D;
