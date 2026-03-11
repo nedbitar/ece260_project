@@ -1,5 +1,5 @@
 xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s017: Started on Mar 06, 2026 at 15:13:40 PST
+TOOL:	xrun(64)	20.09-s017: Started on Mar 08, 2026 at 13:02:50 PDT
 xrun
 	-clean
 	-define INITIALIZE_MEMORY
@@ -68,22 +68,6 @@ file: ./fullchip.out.v
 	module fullchip.fifo_depth16_bw20_simd1_5:v
 		errors: 0, warnings: 0
 file: ./fullchip.out.v
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_7:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_6:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_5:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_4:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_3:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_2:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_1:v
-		errors: 0, warnings: 0
-	module fullchip.mac_8in_bw8_bw_psum20_pr8_0:v
-		errors: 0, warnings: 0
 	module fullchip.fifo_mux_16_1_bw20_simd1_7:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_16_1_bw20_simd1_6:v
@@ -107,47 +91,47 @@ file: ./fullchip.out.v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_14:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_118:v
-		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_12:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_13:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_112:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_118:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_0:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_1:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_113:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_112:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_2:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_3:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_114:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_113:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_4:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_5:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_115:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_114:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_6:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_7:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_116:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_115:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_8:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_9:v
 		errors: 0, warnings: 0
-	module fullchip.fifo_mux_2_1_bw20_simd1_117:v
+	module fullchip.fifo_mux_2_1_bw20_simd1_116:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_10:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_8_1_bw20_simd1_11:v
+		errors: 0, warnings: 0
+	module fullchip.fifo_mux_2_1_bw20_simd1_117:v
 		errors: 0, warnings: 0
 file: ./fullchip.out.v
 	module fullchip.fifo_mux_2_1_bw20_simd1_105:v
@@ -375,25 +359,37 @@ file: ./fullchip.out.v
 	module fullchip.fifo_mux_2_1_bw20_simd1_83:v
 		errors: 0, warnings: 0
 file: ./tcbn65gplus.v
+	module tcbn65gplus.AN2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AN2XD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AN3D0:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.AO21D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AO22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AO31D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AO32D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AOI211D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.AOI21D0:v
+	module tcbn65gplus.AOI211D1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.AOI21D2:v
+	module tcbn65gplus.AOI21D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AOI221D0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.AOI221D1:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.AOI22D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.AOI31D0:v
+	module tcbn65gplus.AOI22D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AOI32D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AOI32D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.BUFFD0:v
 		errors: 0, warnings: 0
@@ -401,13 +397,35 @@ file: ./tcbn65gplus.v
 		errors: 0, warnings: 0
 	module tcbn65gplus.BUFFD2:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD6:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD8:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.CKAN2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKAN2D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.CKBD1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.CKBD2:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD8:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.CKMUX2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKMUX2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND12:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND16:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.CKND2:v
 		errors: 0, warnings: 0
@@ -415,11 +433,13 @@ file: ./tcbn65gplus.v
 		errors: 0, warnings: 0
 	module tcbn65gplus.CKND2D1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.CMPE42D1:v
+	module tcbn65gplus.CKND2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND6:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.DFD1:v
-		errors: 0, warnings: 0
-	module tcbn65gplus.DFD2:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.DFKCNQD1:v
 		errors: 0, warnings: 0
@@ -427,29 +447,49 @@ file: ./tcbn65gplus.v
 		errors: 0, warnings: 0
 	module tcbn65gplus.DFQD2:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.DFQD4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.EDFKCNQD1:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.EDFQD1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.FA1D0:v
+	module tcbn65gplus.IAO21D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.IND2D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.IND2D1:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.IND2D2:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.IND3D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.IND4D0:v
-		errors: 0, warnings: 0
 	module tcbn65gplus.INR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2D2:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.INR2XD0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.INR2XD1:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.INR2XD2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2XD4:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.INVD0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.INVD1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.IOA21D0:v
+	module tcbn65gplus.INVD2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INVD3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INVD4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INVD6:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INVD8:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.MAOI22D0:v
 		errors: 0, warnings: 0
@@ -459,19 +499,43 @@ file: ./tcbn65gplus.v
 		errors: 0, warnings: 0
 	module tcbn65gplus.MUX2ND0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.ND2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND2D2:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.ND3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND3D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.ND4D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.NR2D0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D4:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.NR2XD0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.NR2XD1:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.NR3D0:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.NR4D0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.NR4D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR4D3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OA211D0:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.OA21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OA21D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.OA22D0:v
 		errors: 0, warnings: 0
@@ -481,19 +545,35 @@ file: ./tcbn65gplus.v
 		errors: 0, warnings: 0
 	module tcbn65gplus.OAI21D0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.OAI21D1:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.OAI221D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.OAI222D0:v
+	module tcbn65gplus.OAI221D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.OAI22D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.OAI31D0:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.OAI31D1:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.OAI32D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.OAI33D0:v
+	module tcbn65gplus.OAI32D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.OR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR2D4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR3D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.TIEH:v
 		errors: 0, warnings: 0
 	primitive tcbn65gplus.tsmc_mux:v
 		errors: 0, warnings: 0
@@ -505,289 +585,111 @@ file: ./tcbn65gplus.v
 		Caching library 'worklib' ....... Done
 		Caching library 'tcbn65gplus' ....... Done
 	Elaborating the design hierarchy:
-  DFD1 cnt_q_reg_2_ ( .D(n84), .CP(n160), .QN(n15) );
+		Caching library 'fullchip' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,36|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_1__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id1<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id1:v'.
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,359|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_2__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id2<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id2:v'.
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,680|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_3__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id3<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id3:v'.
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,1002|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_4__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id4<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id4:v'.
+  DFD1 cnt_q_reg_2_ ( .D(n16), .CP(clk), .QN(n10) );
                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,2261|18): 1 output port was not connected:
+xmelab: *W,CUVWSP (./fullchip.out.v,1071|18): 1 output port was not connected:
 xmelab: (./tcbn65gplus.v,5821): Q
 
-  DFD1 cnt_q_reg_0_ ( .D(n85), .CP(n153), .QN(n10) );
+  DFD1 cnt_q_reg_0_ ( .D(n18), .CP(clk), .QN(n4) );
                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,4796|18): 1 output port was not connected:
+xmelab: *W,CUVWSP (./fullchip.out.v,1202|18): 1 output port was not connected:
 xmelab: (./tcbn65gplus.v,5821): Q
 
-  DFD1 cnt_q_reg_1_ ( .D(n84), .CP(n153), .Q(cnt_q[1]) );
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,1325|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_5__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id5<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id5:v'.
+  DFD1 cnt_q_reg_2_ ( .D(n17), .CP(clk), .QN(n11) );
                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,4797|18): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5821): QN
-
-  DFD1 cnt_q_reg_0_ ( .D(n88), .CP(n158), .QN(n11) );
-                  |
-xmelab: *W,CUVWSP (./fullchip.out.v,7272|18): 1 output port was not connected:
+xmelab: *W,CUVWSP (./fullchip.out.v,1525|18): 1 output port was not connected:
 xmelab: (./tcbn65gplus.v,5821): Q
 
-  DFD1 cnt_q_reg_0_ ( .D(n85), .CP(n157), .QN(n8) );
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,1651|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_6__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id6<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id6:v'.
+  DFD1 cnt_q_reg_2_ ( .D(n16), .CP(clk), .QN(n9) );
                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,9807|18): 1 output port was not connected:
+xmelab: *W,CUVWSP (./fullchip.out.v,1718|18): 1 output port was not connected:
 xmelab: (./tcbn65gplus.v,5821): Q
 
-  DFD1 cnt_q_reg_3_ ( .D(n88), .CP(n159), .Q(cnt_q[3]) );
+  mac_8in mac_8in_instance ( .a(q_out), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,1975|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_7__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id7<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id7:v'.
+  mac_8in mac_8in_instance ( .a(n), .b(key_q), .out(out) );
+                         |
+xmelab: *E,CUVMUR (./fullchip.out.v,2297|25): instance 'fullchip_tb.fullchip_instance@fullchip<module>.core_instance@core_col8_bw8_bw_psum20_pr8<module>.mac_array_instance@mac_array_col8_bw8_bw_psum20_pr8<module>.col_idx_8__mac_col_inst@mac_col_bw8_bw_psum20_pr8_col_id8<module>.mac_8in_instance' of design unit 'mac_8in' is unresolved in 'fullchip.mac_col_bw8_bw_psum20_pr8_col_id8:v'.
+  DFD1 cnt_q_reg_0_ ( .D(n84), .CP(clk), .QN(n70) );
                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,12345|18): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5821): QN
-
-  DFD1 cnt_q_reg_3_ ( .D(n86), .CP(clk), .Q(cnt_q[3]) );
-                  |
-xmelab: *W,CUVWSP (./fullchip.out.v,14877|18): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5821): QN
+xmelab: *W,CUVWSP (./fullchip.out.v,2497|18): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,5821): Q
 
   ofifo_col8_bw20 ofifo_inst ( .clk(clk), .in(array_out), .out(pmem_in), .rd(
                            |
-xmelab: *W,CUVWSP (./fullchip.out.v,46047|27): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,29795): o_valid
-xmelab: (./fullchip.out.v,29795): o_full
+xmelab: *W,CUVWSP (./fullchip.out.v,29900|27): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,13538): o_valid
+xmelab: (./fullchip.out.v,13538): o_full
 
-  fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29803|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,20900): o_full
-xmelab: (./fullchip.out.v,20901): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13547|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,3262): o_full
+xmelab: (./fullchip.out.v,3263): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,21277|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29806|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,22076): o_full
-xmelab: (./fullchip.out.v,22077): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13550|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,4615): o_full
+xmelab: (./fullchip.out.v,4616): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,22453|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29809|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,29166): o_full
-xmelab: (./fullchip.out.v,29167): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13553|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,12742): o_full
+xmelab: (./fullchip.out.v,12743): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n288), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,29544|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29812|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,27985): o_full
-xmelab: (./fullchip.out.v,27986): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13556|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,11389): o_full
+xmelab: (./fullchip.out.v,11390): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n289), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,28364|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29815|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,26804): o_full
-xmelab: (./fullchip.out.v,26805): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13559|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,10036): o_full
+xmelab: (./fullchip.out.v,10037): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n289), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,27183|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29818|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,25625): o_full
-xmelab: (./fullchip.out.v,25626): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13562|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,8681): o_full
+xmelab: (./fullchip.out.v,8682): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n288), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,26003|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29821|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,24444): o_full
-xmelab: (./fullchip.out.v,24445): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13565|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,7328): o_full
+xmelab: (./fullchip.out.v,7329): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n289), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24823|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-  fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance ( .rd_clk(clk), .wr_clk(
+  fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance ( .rd_clk(1'b0), .wr_clk(
                                                    |
-xmelab: *W,CUVWSP (./fullchip.out.v,29824|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,23263): o_full
-xmelab: (./fullchip.out.v,23264): o_empty
+xmelab: *W,CUVWSP (./fullchip.out.v,13568|51): 2 output ports were not connected:
+xmelab: (./fullchip.out.v,5975): o_full
+xmelab: (./fullchip.out.v,5976): o_empty
 
-  DFD2 rd_ptr_reg_1_ ( .D(n289), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,23642|19): 1 output port was not connected:
-xmelab: (./tcbn65gplus.v,5860): QN
-
-	Top level design units:
-		fullchip_tb
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.fullchip_tb:v <0x1b1d239b>
-			streams:  28, words: 48503
-		fullchip.mac_array_col8_bw8_bw_psum20_pr8:v <0x63543ab8>
-			streams:   0, words:     0
-		fullchip.fullchip:v <0x11bcc7cf>
-			streams:   0, words:     0
-		tcbn65gplus.CKMUX2D1:v <0x6286e7b1>
-			streams:   0, words:     0
-		tcbn65gplus.DFQD1:v <0x261779eb>
-			streams:   0, words:     0
-		tcbn65gplus.EDFQD1:v <0x48aac760>
-			streams:   0, words:     0
-		tcbn65gplus.DFQD2:v <0x558d3203>
-			streams:   0, words:     0
-		tcbn65gplus.DFD2:v <0x424f5ea5>
-			streams:   0, words:     0
-		tcbn65gplus.EDFQD1:v <0x2fc7994c>
-			streams:   0, words:     0
-		tcbn65gplus.MUX2D0:v <0x7a844a2b>
-			streams:   0, words:     0
-		tcbn65gplus.DFD1:v <0x44adc9f2>
-			streams:   0, words:     0
-		tcbn65gplus.DFQD1:v <0x1514c5e1>
-			streams:   0, words:     0
-		tcbn65gplus.DFKCNQD1:v <0x2b2a5ea7>
-			streams:   0, words:     0
-		tcbn65gplus.CMPE42D1:v <0x7ef1cfee>
-			streams:   0, words:     0
-		tcbn65gplus.MUX2ND0:v <0x37fd347a>
-			streams:   0, words:     0
-		tcbn65gplus.FA1D0:v <0x187e633c>
-			streams:   0, words:     0
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                   Instances  Unique
-		Modules:               28850     236
-		UDPs:                  17904       3
-		Primitives:            82907       8
-		Timing outputs:        31146      51
-		Registers:              8658      41
-		Scalar wires:          43227       -
-		Expanded wires:           72       3
-		Initial blocks:           14      14
-		Cont. assignments:        11      11
-		Pseudo assignments:        3       3
-		Timing checks:            44       -
-		Simulation timescale:    1ps
-	Writing initial simulation snapshot: worklib.fullchip_tb:v
-
--------------------------------------
-Relinquished control to SimVision...
-xcelium> 
-xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
-xcelium> database -open waves -into waves.shm -default
-Created default SHM database waves
-xcelium> probe -create -shm fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_1 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_2 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_3 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_4 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_5 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_6 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_7 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_8 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_9 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_10 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_11 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_12 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_13 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_14 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_15 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_16 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_17 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_18 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_19 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_20 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_21 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_22 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_23 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_24 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_25 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_26 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_27 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_28 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_29 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_30 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_31 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_32 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_33 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_34 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_35 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_36 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_37 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_38 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_39 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_40 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_41 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_42 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_43 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_44 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_45 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_46 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_47 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_48 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_49 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_50 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_51 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_52 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_53 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_54 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_55 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_56 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_57 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_58 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_59 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_60 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_61 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_62 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_63 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_64 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_65 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.SYNOPSYS_UNCONNECTED_66 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.clk fullchip_tb.fullchip_instance.core_instance.mac_array_instance.fifo_wr fullchip_tb.fullchip_instance.core_instance.mac_array_instance.in fullchip_tb.fullchip_instance.core_instance.mac_array_instance.inst fullchip_tb.fullchip_instance.core_instance.mac_array_instance.inst_temp fullchip_tb.fullchip_instance.core_instance.mac_array_instance.n1 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.out fullchip_tb.fullchip_instance.core_instance.mac_array_instance.q_temp fullchip_tb.fullchip_instance.core_instance.mac_array_instance.reset fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.clk fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.cnt_q fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.fifo_wr fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.i_inst fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.key_q fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.load_ready_q fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n1 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n2 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n3 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n4 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n5 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n6 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n7 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n8 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n9 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n10 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n11 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n12 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n13 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n14 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n15 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n16 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n17 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n18 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n19 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n20 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n21 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n22 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n23 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n24 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n25 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n26 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n27 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n28 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n29 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n30 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n31 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n32 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n33 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n34 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n35 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n36 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n37 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n38 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n39 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n40 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n41 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n42 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n43 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n44 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n45 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n46 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n47 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n48 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n49 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n50 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n51 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n52 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n53 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n54 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n55 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n56 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n57 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n58 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n59 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n60 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n61 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n62 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n63 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n64 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n65 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n66 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n67 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n68 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n69 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n70 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n71 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n72 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n73 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n74 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n75 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n76 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n77 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n78 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n79 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n80 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n81 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n82 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n83 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n84 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n85 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n86 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n87 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n88 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n89 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n90 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n91 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n92 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n93 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n94 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n95 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n96 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n97 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n98 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n99 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n100 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n101 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n102 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n103 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n104 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n105 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n106 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n107 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n108 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n109 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n110 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n111 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n112 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n113 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n114 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n115 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n116 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n117 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n118 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n119 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n120 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n121 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n122 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n123 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n124 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n125 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n126 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n127 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n128 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n129 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n130 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n131 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n132 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n133 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n134 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n135 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n136 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n137 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n138 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n139 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n140 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n141 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n142 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n143 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n144 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n145 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n146 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n147 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n148 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n149 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n150 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n151 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n152 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n153 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n154 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n155 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n156 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n157 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n158 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n159 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.n160 fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.o_inst fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.out fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.q_in fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.q_out fullchip_tb.fullchip_instance.core_instance.mac_array_instance.col_idx_1__mac_col_inst.reset
-Created probe 1
-xcelium> run
-##### Q data txt reading #####
-##### K data txt reading #####
-##### Estimated multiplication result #####
-prd @cycle 0: 00006fffa3000640000cfffa0fffe0fffea00003
-prd @cycle 1: 000230000100023fffe0ffffc00002ffff00004b
-prd @cycle 2: fffc6fffa50005400030fffde0000a0002cffff0
-prd @cycle 3: 00005fffd000050fffe7fffabfffaffffeafffbd
-prd @cycle 4: 00028ffff80004b00038fffd6fffdffffd20000b
-prd @cycle 5: 0004200040ffffd0002e000250005f00024ffff6
-prd @cycle 6: 0006100075fffd60001d000260002bffffefffd3
-prd @cycle 7: 00004fffef0001a0000b0000000008ffff40001e
-##### Qmem writing #####
-##### Kmem writing #####
-##### K data loading to processor #####
-##### execute #####
-##### move ofifo to pmem #####
-ofifo->pmem @cycle0 addr0: fifo_out=00000000000000000000fffa0000000000000000
-ofifo->pmem @cycle1 addr1: fifo_out=00000000000000000000ffffc000000000000000
-ofifo->pmem @cycle2 addr2: fifo_out=00000000000000000000fffde000000000000000
-ofifo->pmem @cycle3 addr3: fifo_out=00000000000000000000fffab000000000000000
-ofifo->pmem @cycle4 addr4: fifo_out=00000000000000000000fffd6000000000000000
-ofifo->pmem @cycle5 addr5: fifo_out=0000000000000000000000025000000000000000
-ofifo->pmem @cycle6 addr6: fifo_out=0000000000000000000000026000000000000000
-ofifo->pmem @cycle7 addr7: fifo_out=0000000000000000000000000000000000000000
-##### Read from pmem and verify #####
-FAIL @cycle0 col7: got 0, expected 3
-FAIL @cycle0 col6: got 0, expected fffea
-FAIL @cycle0 col5: got 0, expected fffe0
-FAIL @cycle0 col3: got 0, expected c
-FAIL @cycle0 col2: got 0, expected 64
-FAIL @cycle0 col1: got 0, expected fffa3
-FAIL @cycle0 col0: got 0, expected 6
-pmem rd @cycle 0: 00000000000000000000fffa0000000000000000  (expected: 00006fffa3000640000cfffa0fffe0fffea00003)
-FAIL @cycle1 col7: got 0, expected 4b
-FAIL @cycle1 col6: got 0, expected ffff0
-FAIL @cycle1 col5: got 0, expected 2
-FAIL @cycle1 col3: got 0, expected fffe0
-FAIL @cycle1 col2: got 0, expected 23
-FAIL @cycle1 col1: got 0, expected 1
-FAIL @cycle1 col0: got 0, expected 23
-pmem rd @cycle 1: 00000000000000000000ffffc000000000000000  (expected: 000230000100023fffe0ffffc00002ffff00004b)
-FAIL @cycle2 col7: got 0, expected ffff0
-FAIL @cycle2 col6: got 0, expected 2c
-FAIL @cycle2 col5: got 0, expected a
-FAIL @cycle2 col3: got 0, expected 30
-FAIL @cycle2 col2: got 0, expected 54
-FAIL @cycle2 col1: got 0, expected fffa5
-FAIL @cycle2 col0: got 0, expected fffc6
-pmem rd @cycle 2: 00000000000000000000fffde000000000000000  (expected: fffc6fffa50005400030fffde0000a0002cffff0)
-FAIL @cycle3 col7: got 0, expected fffbd
-FAIL @cycle3 col6: got 0, expected fffea
-FAIL @cycle3 col5: got 0, expected fffaf
-FAIL @cycle3 col3: got 0, expected fffe7
-FAIL @cycle3 col2: got 0, expected 50
-FAIL @cycle3 col1: got 0, expected fffd0
-FAIL @cycle3 col0: got 0, expected 5
-pmem rd @cycle 3: 00000000000000000000fffab000000000000000  (expected: 00005fffd000050fffe7fffabfffaffffeafffbd)
-FAIL @cycle4 col7: got 0, expected b
-FAIL @cycle4 col6: got 0, expected fffd2
-FAIL @cycle4 col5: got 0, expected fffdf
-FAIL @cycle4 col3: got 0, expected 38
-FAIL @cycle4 col2: got 0, expected 4b
-FAIL @cycle4 col1: got 0, expected ffff8
-FAIL @cycle4 col0: got 0, expected 28
-pmem rd @cycle 4: 00000000000000000000fffd6000000000000000  (expected: 00028ffff80004b00038fffd6fffdffffd20000b)
-FAIL @cycle5 col7: got 0, expected ffff6
-FAIL @cycle5 col6: got 0, expected 24
-FAIL @cycle5 col5: got 0, expected 5f
-FAIL @cycle5 col3: got 0, expected 2e
-FAIL @cycle5 col2: got 0, expected ffffd
-FAIL @cycle5 col1: got 0, expected 40
-FAIL @cycle5 col0: got 0, expected 42
-pmem rd @cycle 5: 0000000000000000000000025000000000000000  (expected: 0004200040ffffd0002e000250005f00024ffff6)
-FAIL @cycle6 col7: got 0, expected fffd3
-FAIL @cycle6 col6: got 0, expected ffffe
-FAIL @cycle6 col5: got 0, expected 2b
-FAIL @cycle6 col3: got 0, expected 1d
-FAIL @cycle6 col2: got 0, expected fffd6
-FAIL @cycle6 col1: got 0, expected 75
-FAIL @cycle6 col0: got 0, expected 61
-pmem rd @cycle 6: 0000000000000000000000026000000000000000  (expected: 0006100075fffd60001d000260002bffffefffd3)
-FAIL @cycle7 col7: got 0, expected 1e
-FAIL @cycle7 col6: got 0, expected ffff4
-FAIL @cycle7 col5: got 0, expected 8
-FAIL @cycle7 col3: got 0, expected b
-FAIL @cycle7 col2: got 0, expected 1a
-FAIL @cycle7 col1: got 0, expected fffef
-FAIL @cycle7 col0: got 0, expected 4
-pmem rd @cycle 7: 0000000000000000000000000000000000000000  (expected: 00004fffef0001a0000b0000000008ffff40001e)
-Simulation complete via $finish(1) at time 131 NS + 0
-./fullchip_gl_tb.v:350   #10 $finish;
-xcelium> ^C
-xcelium> exit
-TOOL:	xrun(64)	20.09-s017: Exiting on Mar 06, 2026 at 16:16:31 PST  (total: 01:02:51)
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 08, 2026 at 13:02:52 PDT  (total: 00:00:02)

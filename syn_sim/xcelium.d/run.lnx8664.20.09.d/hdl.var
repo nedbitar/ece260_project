@@ -5,5 +5,3 @@ include ./xllibs/hdl.var
 define SNAPSHOT worklib.fullchip_tb:v
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ($LIB_MAP, + => worklib )
-define ELAB_SNAPSHOT
-define SNAPSHOT worklib.fullchip_tb:v

@@ -9,4 +9,5 @@ set_propagated_clock [all_clocks]
 
 # Post-CTS timing optimization
 optDesign -postCTS -hold
+addFiller -cell {DCAP DCAP4 DCAP8 DCAP16 DCAP32} -merge true
 saveDesign cts.enc

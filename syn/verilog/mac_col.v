@@ -3,7 +3,7 @@
 module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst);
 
 parameter bw = 8;
-parameter bw_psum = 2*bw+6;
+parameter bw_psum = 2*bw+4;
 parameter pr = 8;
 parameter col_id = 0;
 
@@ -34,12 +34,14 @@ mac_8in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_8in_instance (
 );
 
 
-always @ (posedge clk) begin
+always @ (posedge clk,posedge reset) begin
   if (reset) begin
     cnt_q <= 'b0;
     load_ready_q <= 'b1;
     inst_q <= 'b0;
     inst_2q <= 'b0;
+    query_q <= 'b0;
+    key_q <= 'b0;
 
   end
   else begin

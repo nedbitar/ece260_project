@@ -16,6 +16,8 @@ module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
   output [simd*bw-1:0] out;
 
   wire full, empty;
+  wire clk;
+
 
   reg [4:0] rd_ptr = 5'b00000;
   reg [4:0] wr_ptr = 5'b00000;
@@ -43,6 +45,7 @@ module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
 
  assign o_full  = full;
  assign o_empty = empty;
+ assign clk = rd_clk | wr_clk;
 
 
   fifo_mux_16_1 #(.bw(bw), .simd(simd)) fifo_mux_16_1a (.in0(q0), .in1(q1), .in2(q2), .in3(q3), .in4(q4), .in5(q5), .in6(q6), .in7(q7),
@@ -50,23 +53,42 @@ module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
 	                         .sel(rd_ptr[3:0]), .out(out));
 
 
- always @ (posedge rd_clk) begin
-   if (reset) begin
-      rd_ptr <= 5'b00000;
-   end
-   else if ((rd == 1) && (empty == 0)) begin
-      rd_ptr <= rd_ptr + 1;
-   end
- end
 
 
- always @ (posedge wr_clk) begin
+ always @ (posedge clk, posedge reset) begin
    if (reset) begin
       wr_ptr <= 5'b00000;
+      rd_ptr <= 5'b00000;
+      q0  <= 0 ;
+      q1  <= 0 ;
+      q2  <= 0 ;
+      q3  <= 0 ;
+      q4  <= 0 ;
+      q5  <= 0 ;
+      q6  <= 0 ;
+      q7  <= 0 ;
+      q8  <= 0 ;
+      q9  <= 0 ;
+      q10  <= 0 ;
+      q11  <= 0 ;
+      q12  <= 0 ;
+      q13  <= 0 ;
+      q14  <= 0 ;
+      q15  <= 0 ;
    end
    else begin 
       if ((wr == 1) && (full == 0)) begin
         wr_ptr <= wr_ptr + 1;
+      end
+      else begin
+        wr_ptr <= wr_ptr;
+      end
+
+      if ((rd == 1) && (empty == 0)) begin
+      rd_ptr <= rd_ptr + 1;
+      end
+      else begin
+        rd_ptr <= rd_ptr;
       end
 
       if (wr == 1) begin
@@ -89,9 +111,26 @@ module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
          4'b1111   :    q15 <= in ;
         endcase
       end
+      else begin
+        q0  <= q0 ;
+        q1  <= q1 ;
+      q2  <= q2 ;
+      q3  <= q3 ;
+      q4  <= q4 ;
+      q5  <= q5 ;
+      q6  <= q6 ;
+      q7  <= q7;
+      q8  <= q8 ;
+      q9  <= q9 ;
+      q10  <= q10 ;
+      q11  <= q11 ;
+      q12  <= q12 ;
+      q13  <= q13 ;
+      q14  <= q14 ;
+      q15  <= q15 ;
+      end
    end
 
  end
-
 
 endmodule

@@ -1,5 +1,5 @@
 xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s017: Started on Mar 06, 2026 at 16:17:02 PST
+TOOL:	xrun(64)	20.09-s017: Started on Mar 10, 2026 at 22:01:25 PDT
 xrun
 	-define INITIALIZE_MEMORY
 	-xminitialize 0
@@ -8,17 +8,19 @@ xrun
 	+xmtimescale+1ns/1ps
 	+xmoverride_timescale
 	+notimingchecks
-	-v ./fullchip.out.v
+	-v ./fullchip.pnr.v
 	-v ./tcbn65gplus.v
 	./fullchip_gl_tb.v
-Recompiling... reason: unable to stat '/./home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/fullchip.out.v'.
-file: ./fullchip.out.v
+file: ./fullchip_gl_tb.v
+	module worklib.fullchip_tb:v
+		errors: 0, warnings: 0
+file: ./fullchip.pnr.v
 	module fullchip.fullchip:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.core_col8_bw8_bw_psum20_pr8:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.mac_array_col8_bw8_bw_psum20_pr8:v
 		errors: 0, warnings: 0
 	module fullchip.ofifo_col8_bw20:v
@@ -29,7 +31,7 @@ file: ./fullchip.out.v
 		errors: 0, warnings: 0
 	module fullchip.sram_w16_sram_bit64_0:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.mac_col_bw8_bw_psum20_pr8_col_id1:v
 		errors: 0, warnings: 0
 	module fullchip.mac_col_bw8_bw_psum20_pr8_col_id2:v
@@ -62,7 +64,7 @@ file: ./fullchip.out.v
 		errors: 0, warnings: 0
 	module fullchip.fifo_depth16_bw20_simd1_5:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.mac_8in_bw8_bw_psum20_pr8_7:v
 		errors: 0, warnings: 0
 	module fullchip.mac_8in_bw8_bw_psum20_pr8_6:v
@@ -95,7 +97,7 @@ file: ./fullchip.out.v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_16_1_bw20_simd1_5:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.fifo_mux_8_1_bw20_simd1_15:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_2_1_bw20_simd1_119:v
@@ -144,7 +146,7 @@ file: ./fullchip.out.v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_2_1_bw20_simd1_117:v
 		errors: 0, warnings: 0
-file: ./fullchip.out.v
+file: ./fullchip.pnr.v
 	module fullchip.fifo_mux_2_1_bw20_simd1_105:v
 		errors: 0, warnings: 0
 	module fullchip.fifo_mux_2_1_bw20_simd1_106:v
@@ -370,220 +372,507 @@ file: ./fullchip.out.v
 	module fullchip.fifo_mux_2_1_bw20_simd1_83:v
 		errors: 0, warnings: 0
 file: ./tcbn65gplus.v
-	module tcbn65gplus.AN2D4:v
+	module tcbn65gplus.AN3D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.AO31D0:v
+	module tcbn65gplus.AO21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AO22D0:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.AOI211D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.AOI22D2:v
+	module tcbn65gplus.AOI21D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.BUFFD12:v
+	module tcbn65gplus.AOI21D2:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.BUFFD16:v
+	module tcbn65gplus.AOI21D4:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.BUFFD4:v
+	module tcbn65gplus.AOI221D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.BUFFD6:v
+	module tcbn65gplus.AOI22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.AOI32D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.BUFFD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKAN2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKAN2D4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD12:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD16:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD2:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.CKBD3:v
 		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD6:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKBD8:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKMUX2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKMUX2D1:v
+		errors: 0, warnings: 0
 	module tcbn65gplus.CKMUX2D2:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.EDFQD2:v
+	module tcbn65gplus.CKND0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.EDFQD4:v
+	module tcbn65gplus.CKND1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.IND3D1:v
+	module tcbn65gplus.CKND2:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.INVD8:v
+	module tcbn65gplus.CKND2D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.MUX2D2:v
+	module tcbn65gplus.CKND2D1:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.NR2D4:v
+	module tcbn65gplus.CKND2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKND4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKXOR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKXOR2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFCND1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFCNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFSND1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.EDFCND1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.EDFCNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.EDFQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.FA1D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.FCICIND1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.HA1D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IAO21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IINR4D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IND2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IND2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IND2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IND3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IND4D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2XD0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2XD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR2XD2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.INR4D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IOA21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.MAOI22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.MOAI22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.MUX2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.MUX2ND0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.ND4D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2D3:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2XD0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR2XD1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.NR2XD2:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.NR4D1:v
+	module tcbn65gplus.NR4D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.OAI22D4:v
+	module tcbn65gplus.OA211D0:v
 		errors: 0, warnings: 0
-	module tcbn65gplus.OR2D4:v
+	module tcbn65gplus.OA21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OA22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OA32D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI211D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI21D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI221D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI22D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI22D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI31D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OAI32D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR2D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OR3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.XNR2D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.XNR2D1:v
 		errors: 0, warnings: 0
 	module tcbn65gplus.XNR3D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.XOR3D0:v
+		errors: 0, warnings: 0
+	primitive tcbn65gplus.tsmc_mux:v
+		errors: 0, warnings: 0
+	primitive tcbn65gplus.tsmc_xbuf:v
+		errors: 0, warnings: 0
+	primitive tcbn65gplus.tsmc_dff:v
 		errors: 0, warnings: 0
 		Caching library 'fullchip' ....... Done
 		Caching library 'worklib' ....... Done
 		Caching library 'tcbn65gplus' ....... Done
 	Elaborating the design hierarchy:
-  FA1D1 U361 ( .A(n1464), .B(n1463), .CI(n1462), .S(n47) );
-           |
-xmelab: *W,CUVWSP (./fullchip.out.v,522|11): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,9795): CO
+   EDFCND1 key_q_reg_55_ (.CDN(FE_OFN39_n54),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,7463|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  FA1D1 U485 ( .A(n646), .B(n645), .CI(n644), .S(n80) );
-           |
-xmelab: *W,CUVWSP (./fullchip.out.v,9559|11): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,9795): CO
+   DFSND1 load_ready_q_reg (.CP(clk_clone8),
+                         |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,14265|25): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,7690): Q
 
-  DFD1 cnt_q_reg_2_ ( .D(n86), .CP(clk), .QN(n11) );
-                  |
-xmelab: *W,CUVWSP (./fullchip.out.v,10537|18): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): Q
+   DFSND1 load_ready_q_reg (.CP(clk_clone4),
+                         |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,21716|25): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,7690): Q
 
-  ofifo_col8_bw20 ofifo_inst ( .clk(clk), .in({array_out[159:136], n9, n10, 
-                           |
-xmelab: *W,CUVWSP (./fullchip.out.v,39906|27): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,24106): o_valid
-xmelab: (./fullchip.out.v,24106): o_full
+   FA1D0 U545 (.A(n1485),
+            |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,25635|12): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,9754): CO
 
-  fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24114|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,14937): o_full
-xmelab: (./fullchip.out.v,14938): o_empty
+   DFSND1 load_ready_q_reg (.CP(clk_clone6),
+                         |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,29287|25): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,7690): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,15318|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   FA1D0 U575 (.A(n1272),
+            |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,33267|12): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,9754): CO
 
-  fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24117|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,16152): o_full
-xmelab: (./fullchip.out.v,16153): o_empty
+   DFCND1 inst_q_reg_0_ (.CDN(n63),
+                      |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,36909|22): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,4786): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n179), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,16534|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   DFSND1 load_ready_q_reg (.CP(clk_clone8),
+                         |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,36917|25): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,7690): QN
 
-  fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24120|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,23444): o_full
-xmelab: (./fullchip.out.v,23445): o_empty
+   DFCND1 cnt_q_reg_2_ (.CDN(n63),
+                     |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,36925|21): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,4786): Q
 
-  DFD1 rd_ptr_reg_1_ ( .D(n302), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,23826|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   EDFCND1 key_q_reg_13_ (.CDN(n63),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,37424|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24123|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,22231): o_full
-xmelab: (./fullchip.out.v,22232): o_empty
+   EDFCND1 key_q_reg_30_ (.CDN(n63),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,37444|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n300), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,22613|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   EDFCND1 key_q_reg_14_ (.CDN(n63),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,37485|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24126|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,21016): o_full
-xmelab: (./fullchip.out.v,21017): o_empty
+   DFSND1 load_ready_q_reg (.CP(clk_clone3),
+                         |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,52028|25): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,7690): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n302), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,21398|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   EDFCND1 key_q_reg_39_ (.CDN(FE_OFN49_n61),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,52597|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24129|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,19803): o_full
-xmelab: (./fullchip.out.v,19804): o_empty
+   DFCND1 cnt_q_reg_0_ (.CDN(n95),
+                     |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,59611|21): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,4786): Q
 
-  DFD1 rd_ptr_reg_1_ ( .D(n300), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,20185|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   EDFCND1 key_q_reg_37_ (.CDN(n95),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,60162|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24132|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,18590): o_full
-xmelab: (./fullchip.out.v,18591): o_empty
+   EDFCND1 key_q_reg_54_ (.CDN(n95),
+                       |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,60167|23): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n300), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,18972|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   EDFCND1 key_q_reg_9_ (.CDN(FE_OFN50_n95),
+                      |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,60177|22): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance ( .rd_clk(clk), .wr_clk(
-                                                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,24135|51): 2 output ports were not connected:
-xmelab: (./fullchip.out.v,17381): o_full
-xmelab: (./fullchip.out.v,17382): o_empty
+   EDFCND1 key_q_reg_5_ (.CDN(n95),
+                      |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,60182|22): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
 
-  DFD1 rd_ptr_reg_1_ ( .D(n297), .CP(rd_clk), .Q(rd_ptr[1]) );
-                   |
-xmelab: *W,CUVWSP (./fullchip.out.v,17762|19): 1 output port was not connected:
-xmelab: (/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/gate_sim/tcbn65gplus.v,5821): QN
+   ofifo_col8_bw20 ofifo_inst (.in({ array_out[159],
+                            |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,156297|28): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,101542): o_valid
+xmelab: (./fullchip.pnr.v,101544): o_full
+
+   fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101683|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,63384): o_full
+xmelab: (./fullchip.pnr.v,63385): o_empty
+
+   fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101736|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,68302): o_full
+xmelab: (./fullchip.pnr.v,68303): o_empty
+
+   fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101791|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,98259): o_full
+xmelab: (./fullchip.pnr.v,98260): o_empty
+
+   fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101845|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,93240): o_full
+xmelab: (./fullchip.pnr.v,93241): o_empty
+
+   EDFCND1 q9_reg_17_ (.CDN(FE_OFN83_n395),
+                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,95151|20): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
+
+   EDFCND1 q11_reg_17_ (.CDN(FE_OFN83_n395),
+                     |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,95156|21): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
+
+   EDFCND1 q0_reg_17_ (.CDN(FE_OFN83_n395),
+                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,95176|20): 1 output port was not connected:
+xmelab: (./tcbn65gplus.v,8476): QN
+
+   fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101902|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,88080): o_full
+xmelab: (./fullchip.pnr.v,88081): o_empty
+
+   fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,101956|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,83146): o_full
+xmelab: (./fullchip.pnr.v,83147): o_empty
+
+   fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,102007|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,78207): o_full
+xmelab: (./fullchip.pnr.v,78208): o_empty
+
+   fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance (.rd_clk(1'b0),
+                                                    |
+xmelab: *W,CUVWSP (./fullchip.pnr.v,102057|52): 2 output ports were not connected:
+xmelab: (./fullchip.pnr.v,73267): o_full
+xmelab: (./fullchip.pnr.v,73268): o_empty
 
 	Top level design units:
 		fullchip_tb
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		fullchip.fifo_mux_16_1_bw20_simd1_0:v <0x4299b1d0>
+		worklib.fullchip_tb:v <0x1b1d239b>
+			streams:  28, words: 48503
+		fullchip.fifo_mux_16_1_bw20_simd1_0:v <0x0d562632>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_1:v <0x009f6de8>
+		fullchip.fifo_depth16_bw20_simd1_0:v <0x77b37903>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_2:v <0x1de50fe1>
+		fullchip.fifo_mux_16_1_bw20_simd1_1:v <0x3d51362f>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_3:v <0x5fe3d3d9>
+		fullchip.fifo_depth16_bw20_simd1_1:v <0x11742b79>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_4:v <0x7c60cdb2>
+		fullchip.fifo_mux_16_1_bw20_simd1_2:v <0x11091b9b>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_5:v <0x3e66118a>
+		fullchip.fifo_depth16_bw20_simd1_2:v <0x64b0c74a>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_6:v <0x231c7383>
+		fullchip.fifo_mux_16_1_bw20_simd1_3:v <0x148b7543>
 			streams:   0, words:     0
-		fullchip.fifo_mux_16_1_bw20_simd1_7:v <0x611aafbb>
+		fullchip.fifo_depth16_bw20_simd1_3:v <0x59bd0bc7>
 			streams:   0, words:     0
-		fullchip.ofifo_col8_bw20:v <0x1bba4662>
+		fullchip.fifo_mux_16_1_bw20_simd1_4:v <0x30d018be>
 			streams:   0, words:     0
-		fullchip.mac_array_col8_bw8_bw_psum20_pr8:v <0x402589eb>
+		fullchip.fifo_depth16_bw20_simd1_4:v <0x4829dba1>
 			streams:   0, words:     0
-		fullchip.core_col8_bw8_bw_psum20_pr8:v <0x1c87907c>
+		fullchip.fifo_mux_16_1_bw20_simd1_5:v <0x4d0e46d5>
 			streams:   0, words:     0
-		fullchip.fullchip:v <0x11bcc7cf>
+		fullchip.fifo_depth16_bw20_simd1_5:v <0x4128477d>
 			streams:   0, words:     0
-		tcbn65gplus.CKMUX2D2:v <0x7c167d47>
+		fullchip.fifo_mux_16_1_bw20_simd1_6:v <0x72c66688>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_6:v <0x30184a2e>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_7:v <0x51517b7c>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_7:v <0x246d5eae>
+			streams:   0, words:     0
+		fullchip.ofifo_col8_bw20:v <0x61c2e47e>
+			streams:   1, words:   672
+		fullchip.mac_8in_bw8_bw_psum20_pr8_0:v <0x2cf539a3>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id8:v <0x46ceb950>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_1:v <0x55bdd34e>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id7:v <0x4c46d97d>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_2:v <0x784a4c3f>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id6:v <0x408c6ccb>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id5:v <0x1a306002>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_4:v <0x4a0aa265>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id4:v <0x73ce3044>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_5:v <0x0ad5d4af>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id3:v <0x378bd416>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_6:v <0x5f343281>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id2:v <0x5e7c687b>
+			streams:   0, words:     0
+		fullchip.mac_8in_bw8_bw_psum20_pr8_7:v <0x1fcbe32e>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr8_col_id1:v <0x678d1731>
+			streams:   0, words:     0
+		fullchip.mac_array_col8_bw8_bw_psum20_pr8:v <0x0e5dd5fc>
+			streams:   0, words:     0
+		fullchip.core_col8_bw8_bw_psum20_pr8:v <0x73f1d8a1>
+			streams:   0, words:     0
+		fullchip.fullchip:v <0x2c92c63c>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D1:v <0x6286e7b1>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D0:v <0x59102171>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D0:v <0x1de91407>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD1:v <0x1514c5e1>
 			streams:   0, words:     0
 		tcbn65gplus.DFQD1:v <0x261779eb>
 			streams:   0, words:     0
 		tcbn65gplus.EDFQD1:v <0x48aac760>
 			streams:   0, words:     0
-		tcbn65gplus.MUX2D2:v <0x56097382>
+		tcbn65gplus.CKMUX2D2:v <0x1b7b236b>
 			streams:   0, words:     0
-		tcbn65gplus.FA1D4:v <0x2123ee30>
+		tcbn65gplus.CKMUX2D0:v <0x3e7d7f5d>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D1:v <0x05ebb99d>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D0:v <0x7a844a2b>
+			streams:   0, words:     0
+		tcbn65gplus.EDFCND1:v <0x56ec1ff2>
+			streams:   0, words:     0
+		tcbn65gplus.DFCND1:v <0x0db01245>
+			streams:   0, words:     0
+		tcbn65gplus.EDFCNQD1:v <0x2681b9e6>
+			streams:   0, words:     0
+		tcbn65gplus.DFSND1:v <0x7cba36cf>
+			streams:   0, words:     0
+		tcbn65gplus.DFCNQD1:v <0x51a89257>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D1:v <0x47f0a80a>
 			streams:   0, words:     0
 		tcbn65gplus.XNR3D0:v <0x06c20e9c>
 			streams:   0, words:     0
-		tcbn65gplus.EDFQD4:v <0x284a1283>
+		tcbn65gplus.XNR2D1:v <0x0fba0400>
 			streams:   0, words:     0
-		tcbn65gplus.EDFQD2:v <0x1b93e236>
+		tcbn65gplus.HA1D0:v <0x61a32c31>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D0:v <0x455d554f>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D0:v <0x30d08bab>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D0:v <0x0d70598a>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D0:v <0x187e633c>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2ND0:v <0x37fd347a>
+			streams:   0, words:     0
+		tcbn65gplus.FCICIND1:v <0x17019cb1>
 			streams:   0, words:     0
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                   Instances  Unique
-		Modules:               31178     317
-		UDPs:                  20615       3
-		Primitives:            72802       9
-		Timing outputs:        33150     118
-		Registers:              8658      43
-		Scalar wires:          45805       -
+		Modules:               32122     269
+		UDPs:                  22804       3
+		Primitives:            74904       9
+		Timing outputs:        34105      85
+		Registers:              8658      42
+		Scalar wires:          48622       -
 		Expanded wires:           72       3
 		Initial blocks:           14      14
-		Cont. assignments:        11      11
-		Pseudo assignments:        3       3
-		Timing checks:            64       -
+		Cont. assignments:        11      18
+		Pseudo assignments:        4       4
+		Timing checks:            69       -
 		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.fullchip_tb:v
 Loading snapshot worklib.fullchip_tb:v .................... Done
@@ -625,4 +914,4 @@ pmem rd @cycle 7: 00004fffef0001a0000b0000000008ffff40001e  (expected: 00004fffe
 Simulation complete via $finish(1) at time 131 NS + 0
 ./fullchip_gl_tb.v:350   #10 $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s017: Exiting on Mar 06, 2026 at 16:17:09 PST  (total: 00:00:07)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 10, 2026 at 22:01:35 PDT  (total: 00:00:10)

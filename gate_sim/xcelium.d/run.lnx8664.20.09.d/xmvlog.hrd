@@ -3,7 +3,7 @@
 // Do not modify this file
 //
 -VFILE
-./fullchip.out.v
+./fullchip.pnr.v
 -VFILE
 ./tcbn65gplus.v
 -DEFINE

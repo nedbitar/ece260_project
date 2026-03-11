@@ -8,14 +8,14 @@ output signed [bw_psum-1:0] out;
 input  signed [pr*bw-1:0]   a;
 input  signed [pr*bw-1:0]   b;
 
-wire signed [2*bw-1:0] product0;
-wire signed [2*bw-1:0] product1;
-wire signed [2*bw-1:0] product2;
-wire signed [2*bw-1:0] product3;
-wire signed [2*bw-1:0] product4;
-wire signed [2*bw-1:0] product5;
-wire signed [2*bw-1:0] product6;
-wire signed [2*bw-1:0] product7;
+wire signed [bw*2-1:0] product0;
+wire signed [bw*2-1:0] product1;
+wire signed [bw*2-1:0] product2;
+wire signed [bw*2-1:0] product3;
+wire signed [bw*2-1:0] product4;
+wire signed [bw*2-1:0] product5;
+wire signed [bw*2-1:0] product6;
+wire signed [bw*2-1:0] product7;
 
 assign product0 = $signed(a[bw*1-1:bw*0]) * $signed(b[bw*1-1:bw*0]);
 assign product1 = $signed(a[bw*2-1:bw*1]) * $signed(b[bw*2-1:bw*1]);

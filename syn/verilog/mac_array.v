@@ -15,7 +15,7 @@ output [col-1:0] fifo_wr;
 
 wire   [col*bw_psum-1:0] psum;
 wire   [2*(col+1)-1:0] inst_temp;
-wire   [2*(col+1)*bw*pr-1:0] q_temp;
+wire   [(col+1)*bw*pr-1:0] q_temp;
 
 genvar i;
 

@@ -1,8 +1,4 @@
 define LIB_MAP ( $LIB_MAP \
 , ../../../tcbn65gplus.v => tcbn65gplus \
-, ../../../fullchip.out.v => fullchip \
-)
-define LIB_MAP ( $LIB_MAP \
-, ../../../tcbn65gplus.v => tcbn65gplus \
-, ../../../fullchip.out.v => fullchip \
+, ../../../fullchip.pnr.v => fullchip \
 )
