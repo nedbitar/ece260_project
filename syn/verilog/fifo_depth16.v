@@ -71,9 +71,6 @@ module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
    else begin
       if ((wr == 1) && (full == 0)) begin
         wr_ptr <= wr_ptr + 1;
-      end
-
-      if (wr == 1) begin
         case (wr_ptr[3:0])
          4'b0000   :    q0  <= in ;
          4'b0001   :    q1  <= in ;

@@ -2,9 +2,11 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(06Mar2026:09:30:49):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
-s2::(06Mar2026:14:45:00):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
-s3::(06Mar2026:14:48:17):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
-s4::(06Mar2026:14:50:18):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
-s5::(06Mar2026:14:52:32):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +gui +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
-s6::(06Mar2026:16:17:02):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.out.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s1::(09Mar2026:10:16:22):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s2::(10Mar2026:14:45:42):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s3::(10Mar2026:16:37:03):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s4::(10Mar2026:18:26:01):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s5::(10Mar2026:18:26:30):( xrun clean )
+s6::(10Mar2026:18:26:32):( xrun -define INITIALIZE_MEMORY -xminitialize 0 +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )
+s7::(10Mar2026:22:14:52):( xrun clean )
+s8::(10Mar2026:22:15:11):( xrun -define INITIALIZE_MEMORY +access+rwc +xm64bit +xmtimescale+1ns/1ps +xmoverride_timescale +notimingchecks -v ./fullchip.pnr.v -v ./tcbn65gplus.v ./fullchip_gl_tb.v )

@@ -23,6 +23,7 @@ setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.09 -pinDepth 0.47 -fixOverlap 1 -unit MICRON \
         -spreadDirection clockwise -side Left -layer 1 \
         -spreadType center -spacing 1.5 \
+        -fixedPin 1 \
         -pin $input_pins
 setPinAssignMode -pinEditInBatch false
 
@@ -31,5 +32,6 @@ setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.09 -pinDepth 0.47 -fixOverlap 1 -unit MICRON \
         -spreadDirection clockwise -side Right -layer 1 \
         -spreadType center -spacing 1.5 \
+        -fixedPin 1 \
         -pin $output_pins
 setPinAssignMode -pinEditInBatch false

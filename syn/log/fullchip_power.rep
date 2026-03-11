@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Fri Mar  6 16:14:18 2026
+Date   : Tue Mar 10 16:46:47 2026
 ****************************************
 
 
@@ -60,48 +60,6 @@ fifo_mux_8_1_bw20_simd1_15
 fifo_mux_2_1_bw20_simd1_119
                        ZeroWireload      tcbn65gpluswc
 sram_w16_sram_bit64_0  ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_depth16_bw20_simd1_5
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_5
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_6
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_7
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_8
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_9
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_10
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_11
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_12
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_13
-                       ZeroWireload      tcbn65gpluswc
-fifo_mux_8_1_bw20_simd1_14
-                       ZeroWireload      tcbn65gpluswc
 mac_8in_bw8_bw_psum20_pr8_0
                        ZeroWireload      tcbn65gpluswc
 mac_8in_bw8_bw_psum20_pr8_1
@@ -115,6 +73,18 @@ mac_8in_bw8_bw_psum20_pr8_4
 mac_8in_bw8_bw_psum20_pr8_5
                        ZeroWireload      tcbn65gpluswc
 mac_8in_bw8_bw_psum20_pr8_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_depth16_bw20_simd1_5
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_16_1_bw20_simd1_0
                        ZeroWireload      tcbn65gpluswc
@@ -366,6 +336,36 @@ fifo_mux_2_1_bw20_simd1_117
                        ZeroWireload      tcbn65gpluswc
 fifo_mux_2_1_bw20_simd1_118
                        ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_5
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_6
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_7
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_8
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_9
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_10
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_11
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_12
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_13
+                       ZeroWireload      tcbn65gpluswc
+fifo_mux_8_1_bw20_simd1_14
+                       ZeroWireload      tcbn65gpluswc
 
 
 Global Operating Voltage = 0.9  
@@ -377,12 +377,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  57.0695 mW   (98%)
-  Net Switching Power  =   1.4213 mW    (2%)
+  Cell Internal Power  =  55.8047 mW   (98%)
+  Net Switching Power  =   1.1586 mW    (2%)
                          ---------
-Total Dynamic Power    =  58.4908 mW  (100%)
+Total Dynamic Power    =  56.9633 mW  (100%)
 
-Cell Leakage Power     =   1.2736 mW
+Cell Leakage Power     =   1.1216 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -392,9 +392,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          55.0879            0.1713        5.0955e+05           55.7687  (  93.31%)
+register          55.3505        4.0597e-02        4.1593e+05           55.8072  (  96.08%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.9818            1.2500        7.6401e+05            3.9958  (   6.69%)
+combinational      0.4539            1.1179        7.0562e+05            2.2775  (   3.92%)
 --------------------------------------------------------------------------------------------------
-Total             57.0697 mW         1.4213 mW     1.2736e+06 nW        59.7644 mW
+Total             55.8044 mW         1.1585 mW     1.1216e+06 nW        58.0847 mW
 1

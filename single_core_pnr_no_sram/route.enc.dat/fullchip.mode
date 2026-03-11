@@ -41,6 +41,7 @@ catch { setPlaceMode -reorderScan false }
 catch { setPlaceMode -timingDriven true }
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
 catch { setUsefulSkewMode -ecoRoute false }
+catch { setUsefulSkewMode -maxSkew true }
 catch { setDelayCalMode -enable_high_fanout true }
 catch { setDelayCalMode -engine aae }
 catch { setDelayCalMode -ignoreNetLoad false }

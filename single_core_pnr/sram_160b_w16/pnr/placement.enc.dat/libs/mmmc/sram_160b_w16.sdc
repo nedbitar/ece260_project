@@ -1,0 +1,1 @@
+/home/linux/ieng6/ECE260B_WI26_A00/nabitar/ece260_project/single_core_pnr/sram_160b_w16/pnr/constraints/sram_160b_w16.sdc

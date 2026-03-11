@@ -8,7 +8,7 @@
 -DEFINE
 INITIALIZE_MEMORY
 -VFILE
-./fullchip.out.v
+./fullchip.pnr.v
 -VFILE
 ./tcbn65gplus.v
 ./fullchip_gl_tb.v

@@ -3,7 +3,7 @@
 Report : area
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Fri Mar  6 16:14:14 2026
+Date   : Tue Mar 10 16:46:42 2026
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -12,22 +12,22 @@ Library(s) Used:
 
     tcbn65gpluswc (File: /home/linux/ieng6/ECE260B_WI26_A00/public/PDKdata/db/tcbn65gpluswc.db)
 
-Number of ports:                        17476
-Number of nets:                         50347
-Number of cells:                        31176
-Number of combinational cells:          22378
+Number of ports:                        17479
+Number of nets:                         50309
+Number of cells:                        31117
+Number of combinational cells:          22319
 Number of sequential cells:              8624
 Number of macros/black boxes:               0
-Number of buf/inv:                       1645
+Number of buf/inv:                       2088
 Number of references:                       1
 
-Combinational area:              79065.360200
-Buf/Inv area:                     2681.640067
-Noncombinational area:           69388.199357
+Combinational area:              78267.600185
+Buf/Inv area:                     3472.920097
+Noncombinational area:           79656.841095
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                148453.559557
+Total cell area:                157924.441280
 Total area:                 undefined
 1
  
@@ -35,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Fri Mar  6 16:14:15 2026
+Date   : Tue Mar 10 16:46:44 2026
 ****************************************
 
 Attributes:
@@ -51,8 +51,8 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-core_col8_bw8_bw_psum20_pr8   148453.559557
-                                                 1  148453.559557 h, n
+core_col8_bw8_bw_psum20_pr8   157924.441280
+                                                 1  157924.441280 h, n
 -----------------------------------------------------------------------------
-Total 1 references                                  148453.559557
+Total 1 references                                  157924.441280
 1

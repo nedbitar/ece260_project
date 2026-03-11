@@ -34,3 +34,4 @@ init_design -setup {WC_VIEW} -hold {BC_VIEW}
 
 set_interactive_constraint_modes {CON}
 setDesignMode -process 65
+setMultiCpuUsage -localCpu 8
